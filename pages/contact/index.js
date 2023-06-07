@@ -6,7 +6,7 @@ import Footer from '@/components/Layout/Footer/Footer';
 import SearchModal from '@/components/Layout/Header/SearchModal';
 import ScrollToTop from '@/components/Common/ScrollTop';
 import Newsletter from '@/components/Common/Newsletter';
-import ContactMain from './ContactMain';
+import ContactMain from './_ContactMain';
 
 const Contact = () => {
     return (
@@ -14,14 +14,14 @@ const Contact = () => {
             <OffWrap />
             {/* Header */}
             {/* <Helmet>
-                <link rel="icon" href={`img/fav-orange.png`} />
+                <link rel="icon" href={`/img/fav-orange.png`} />
             </Helmet> */}
             <Header
                 parentMenu='contact'
-                headerNormalLogo={`img/logo/dark-logo.png`}
-                headerStickyLogo={`img/logo/dark-logo.png`}
-                CanvasLogo={`img/logo/dark-logo.png`}
-                mobileNormalLogo={`img/logo/dark-logo.png`}
+                headerNormalLogo={`/img/logo/dark-logo.png`}
+                headerStickyLogo={`/img/logo/dark-logo.png`}
+                CanvasLogo={`/img/logo/dark-logo.png`}
+                mobileNormalLogo={`/img/logo/dark-logo.png`}
                 CanvasClass="right_menu_togle hidden-md"
                 headerClass="full-width-header header-style1 home8-style4"
                 TopBarClass="topbar-area home8-topbar"
@@ -44,7 +44,7 @@ const Contact = () => {
             {/* Footer */}
             <Footer
                 footerClass="rs-footer home9-style main-home"
-                footerLogo={`img/logo/lite-logo.png`}
+                footerLogo={`/img/logo/lite-logo.png`}
             />
             {/* Footer */}
 

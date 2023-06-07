@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 // Recent Post Thumb Images
-import thumb1 from '../../assets/img/blog/style2/1.jpg'
-import thumb2 from '../../assets/img/blog/style2/2.jpg'
-import thumb3 from '../../assets/img/blog/style2/3.jpg'
-import thumb4 from '../../assets/img/blog/style2/4.jpg'
-import thumb5 from '../../assets/img/blog/style2/5.jpg'
+const thumb1 = '/img/blog/style2/1.jpg'
+const thumb2 = '/img/blog/style2/2.jpg'
+const thumb3 = '/img/blog/style2/3.jpg'
+const thumb4 = '/img/blog/style2/4.jpg'
+const thumb5 = '/img/blog/style2/5.jpg'
 
 const RecentPost = () => {
     return (
@@ -14,7 +14,7 @@ const RecentPost = () => {
             <h3 className="widget-title">Recent Posts</h3>
             <div className="show-featured">
                 <div className="post-img">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         <img
                             src={thumb1}
                             alt=""
@@ -22,7 +22,7 @@ const RecentPost = () => {
                     </Link>
                 </div>
                 <div className="post-desc">
-                    <Link to="/blog/single-post-right-sidebar">Covid-19 threats the generation</Link>
+                    <Link href="/blog/single-post-right-sidebar">Covid-19 threats the generation</Link>
                     <span className="date">
                         <i className="fa fa-calendar"></i>
                         April 6, 2020
@@ -31,7 +31,7 @@ const RecentPost = () => {
             </div>
             <div className="show-featured">
                 <div className="post-img">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         <img
                             src={thumb2}
                             alt=""
@@ -39,7 +39,7 @@ const RecentPost = () => {
                     </Link>
                 </div>
                 <div className="post-desc">
-                    <Link to="/blog/single-post-right-sidebar">Soundtrack filma Exclusive Music</Link>
+                    <Link href="/blog/single-post-right-sidebar">Soundtrack filma Exclusive Music</Link>
                     <span className="date">
                         <i className="fa fa-calendar"></i>
                         April 6, 2020
@@ -48,7 +48,7 @@ const RecentPost = () => {
             </div>
             <div className="show-featured">
                 <div className="post-img">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         <img
                             src={thumb3}
                             alt=""
@@ -56,7 +56,7 @@ const RecentPost = () => {
                     </Link>
                 </div>
                 <div className="post-desc">
-                    <Link to="/blog/single-post-right-sidebar">Soundtrack filma Exclusive Music</Link>
+                    <Link href="/blog/single-post-right-sidebar">Soundtrack filma Exclusive Music</Link>
                     <span className="date">
                         <i className="fa fa-calendar"></i>
                         April 6, 2020
@@ -65,7 +65,7 @@ const RecentPost = () => {
             </div>
             <div className="show-featured">
                 <div className="post-img">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         <img
                             src={thumb4}
                             alt=""
@@ -73,7 +73,7 @@ const RecentPost = () => {
                     </Link>
                 </div>
                 <div className="post-desc">
-                    <Link to="/blog/single-post-right-sidebar">Given void great you’re good</Link>
+                    <Link href="/blog/single-post-right-sidebar">Given void great you’re good</Link>
                     <span className="date">
                         <i className="fa fa-calendar"></i>
                         April 6, 2020
@@ -82,7 +82,7 @@ const RecentPost = () => {
             </div>
             <div className="show-featured">
                 <div className="post-img">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         <img
                             src={thumb5}
                             alt=""
@@ -90,7 +90,7 @@ const RecentPost = () => {
                     </Link>
                 </div>
                 <div className="post-desc">
-                    <Link to="/blog/single-post-right-sidebar">Lights winged seasons fish</Link>
+                    <Link href="/blog/single-post-right-sidebar">Lights winged seasons fish</Link>
                     <span className="date">
                         <i className="fa fa-calendar"></i>
                         April 6, 2020

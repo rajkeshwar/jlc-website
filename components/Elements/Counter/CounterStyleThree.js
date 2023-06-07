@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const CounterStyleThree = () => {
@@ -42,7 +42,7 @@ const CounterStyleThree = () => {
                                         <div className="counter-text">
                                             <div className="count-number">
                                                 <span className="rs-count">
-                                                    <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd= {()=> setState(false)} />
+                                                    {/* <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd= {()=> setState(false)} /> */}
                                                     {({ countUpRef, start }) => (
                                                         <VisibilitySensor onChange={start} delayedCall>
                                                             <span ref={countUpRef} />

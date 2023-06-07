@@ -1,12 +1,12 @@
 
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SinglePostSix = (props) => {
     const { blogClass, blogImage, blogTitle, blogAuthor, blogPublishedDate, blogCategory, blogDesc, blogButtonClass, blogButtonText } = props;
     return (
         <div className={blogClass ? blogClass : 'blog-item'}>
             <div className="blog-img">
-                <Link to="/blog/single-post-right-sidebar">
+                <Link href="/blog/single-post-right-sidebar">
                     <img
                         src={blogImage}
                         alt={blogTitle}
@@ -15,7 +15,7 @@ const SinglePostSix = (props) => {
             </div>
             <div className="blog-content">
                 <h3 className="blog-title">
-                    <Link to="/blog/single-post-right-sidebar">
+                    <Link href="/blog/single-post-right-sidebar">
                         {blogTitle ? blogTitle : 'University while the lovely valley team work'}
                     </Link>
                 </h3>
@@ -34,7 +34,7 @@ const SinglePostSix = (props) => {
                         <li>
                             <div className="tag-line">
                                 <i className="fa fa-book"></i>
-                                <Link to="/blog">{blogCategory ? blogCategory : 'University'}</Link>
+                                <Link href="/blog">{blogCategory ? blogCategory : 'University'}</Link>
                             </div>
                         </li>
                     </ul>
@@ -43,7 +43,7 @@ const SinglePostSix = (props) => {
                     {blogDesc ? blogDesc : 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam... '}
                 </div>
                 <div className={blogButtonClass ? blogButtonClass : 'blog-button'}>
-                    <Link to="/blog/single-post-right-sidebar" className="blog-btn">
+                    <Link href="/blog/single-post-right-sidebar" className="blog-btn">
                         {blogButtonText ? blogButtonText : 'Continue Reading'}
                     </Link>
                 </div>

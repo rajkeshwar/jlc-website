@@ -12,7 +12,7 @@ const AboutVideo = () => {
             <div className="container">
                 <div className="video-img-part media-icon orange-color2">
                     <img
-                        src={`img/about/about-video-bg-orange.png`}
+                        src={`/img/about/about-video-bg-orange.png`}
                         alt="images"
                     />
                     <a className="popup-videos" onClick={() => { openModal(); }}>

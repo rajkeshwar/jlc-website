@@ -1,23 +1,12 @@
 import React from 'react';
 // import { Helmet } from 'react-helmet'
+import FooterStyleTwo from '@/components/Layout/Footer/FooterStyleTwo';
 import Header from '@/components/Layout/Header/Header';
 import OffWrap from '@/components/Layout/Header/OffWrap';
-import FooterStyleTwo from '@/components/Layout/Footer/FooterStyleTwo';
 import SearchModal from '@/components/Layout/Header/SearchModal';
-import HomeTwoMain from './HomeTwoMain';
+import HomeTwoMain from './_HomeTwoMain';
 
-import favIcon from '@/assets/img/fav.png';
-import Logo from '@/assets/img/logo/logo-dark.png';
-import stickyLogo from '@/assets/img/logo/logo-dark.png';
-import mobileLogo from '@/assets/img/logo/logo-dark.png';
-import canvasLogo from '@/assets/img/logo/logo-dark.png';
-
-const Hi = () => {
-    return (<h1>Hi React</h1>  );
-}
- 
-
-const HomeTwo = () => {
+const Home = () => {
     return (
         <React.Fragment>
             {/* <Helmet>
@@ -26,10 +15,10 @@ const HomeTwo = () => {
             <OffWrap />
             <Header
                 parentMenu='home'
-                headerNormalLogo={`img/logo/logo-dark.png`}
-                headerStickyLogo={`img/logo/logo-dark.png`}
-                mobileNormalLogo={`img/logo/logo-dark.png`}
-                CanvasLogo={`img/logo/logo-dark.png`}
+                headerNormalLogo={`/img/logo/logo-dark.png`}
+                headerStickyLogo={`/img/logo/logo-dark.png`}
+                mobileNormalLogo={`/img/logo/logo-dark.png`}
+                CanvasLogo={`/img/logo/logo-dark.png`}
                 CanvasClass="right_menu_togle hidden-md"
                 headerClass="full-width-header header-style1 home1-modifiy"
                 TopBar='enable'
@@ -45,5 +34,5 @@ const HomeTwo = () => {
 }
 
 
-export default HomeTwo;
+export default Home;
 

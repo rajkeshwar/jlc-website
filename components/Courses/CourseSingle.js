@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const CourseSingle = (props) => {
     return (
         <div className={props.itemClass}>
             <div className="courses-grid">
                 <div className="img-part">
-                    <Link to="/course/course-single">
+                    <Link href="/course/course-single">
                         <img
                             src={props.image}
                             alt={props.title}
@@ -30,7 +30,7 @@ const CourseSingle = (props) => {
                         <span className="price">{props.pricing}</span>
                     </div>
                     <h3 className="title">
-                        <Link to="/course/course-single">{props.title}</Link>
+                        <Link href="/course/course-single">{props.title}</Link>
                     </h3>
                     <ul className="meta-part">
                         <li className="user">

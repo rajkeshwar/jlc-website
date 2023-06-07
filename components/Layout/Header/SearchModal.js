@@ -11,7 +11,7 @@ const SearchModal = () => {
             <div className="search-modal">
                 <div onClick={searchModalRemove} className="close">
                     <span>
-                        <img src={`img/icon/close.png`} alt="Close" />
+                        <img src={`/img/icon/close.png`} alt="Close" />
                     </span>
                 </div>
                 <div className="modal-dialog modal-dialog-centered">

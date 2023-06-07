@@ -4,10 +4,10 @@ import SectionTitle from '@/components/Common/SectionTitle';
 import NewsletterTwo from '@/components/Common/Newsletter/NewsletterTwo';
 import SinglePostTwo from '@/components/Blog/SinglePostTwo';
 
-import bgImg from '../../assets/img/bg/bg2.jpg';
+import bgImg from '../../assets//img/bg/bg2.jpg';
 
 const bgStyle = {
-    backgroundImage: `url(img/bg/bg2.jpg)`,
+    backgroundImage: `url(/img/bg/bg2.jpg)`,
     'background-size': 'cover',
     'background-repeat': 'no-repeat',
     'background-position': 'center'
@@ -29,17 +29,17 @@ const Blog = () => {
                         <div className="row">
                             <div className="col-lg-7 col-md-12 pr-74 md-pr-14 md-mb-50">
                                 <SinglePostTwo
-                                    blogImage={`img/blog/1.jpg`}
+                                    blogImage={`/img/blog/1.jpg`}
                                     blogTitle='University while the lovely valley team work '
                                     blogPublishedDate='June 15 2020'
                                 />
                                 <SinglePostTwo
-                                    blogImage={`img/blog/2.jpg`}
+                                    blogImage={`/img/blog/2.jpg`}
                                     blogTitle='While The Lovely Valley Team Work'
                                     blogPublishedDate='December 22 2020'
                                 />
                                 <SinglePostTwo
-                                    blogImage={`img/blog/3.jpg`}
+                                    blogImage={`/img/blog/3.jpg`}
                                     blogTitle='Modern School The Lovely Valley Team Work'
                                     blogPublishedDate='August 28 2020'
                                 />

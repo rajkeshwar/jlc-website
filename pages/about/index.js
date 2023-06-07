@@ -5,7 +5,7 @@ import OffWrap from '@/components/Layout/Header/OffWrap';
 import SearchModal from '@/components/Layout/Header/SearchModal';
 import Newsletter from '@/components/Common/Newsletter';
 import SiteBreadcrumb from '@/components/Common/Breadcumb';
-import AboutMain from './AboutMain';
+import AboutMain from './_AboutMain';
 
 const About = () => {
 
@@ -14,10 +14,10 @@ const About = () => {
             <OffWrap />
             <Header
                 parentMenu='about'
-                headerNormalLogo={`img/logo/dark-logo.png`}
-                headerStickyLogo={`img/logo/dark-logo.png`}
-                CanvasLogo={`img/logo/dark-logo.png`}
-                mobileNormalLogo={`img/logo/dark-logo.png`}
+                headerNormalLogo={`/img/logo/dark-logo.png`}
+                headerStickyLogo={`/img/logo/dark-logo.png`}
+                CanvasLogo={`/img/logo/dark-logo.png`}
+                mobileNormalLogo={`/img/logo/dark-logo.png`}
                 CanvasClass="right_menu_togle hidden-md"
                 headerClass="full-width-header header-style1 home8-style4"
                 TopBar='enable'
@@ -30,7 +30,7 @@ const About = () => {
             <SiteBreadcrumb
                 pageTitle="About"
                 pageName="About"
-                breadcrumbsImg={`img/breadcrumbs/2.jpg`}
+                breadcrumbsImg={`/img/breadcrumbs/2.jpg`}
             />
             {/* breadcrumb-area-start */}
 
@@ -45,7 +45,7 @@ const About = () => {
 
             {/* <Footer
                 footerClass="rs-footer home9-style main-home"
-                footerLogo={`img/logo/lite-logo.png`}
+                footerLogo={`/img/logo/lite-logo.png`}
             /> */}
             <SearchModal />
         </React.Fragment>

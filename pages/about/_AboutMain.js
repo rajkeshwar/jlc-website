@@ -1,9 +1,9 @@
 import React from 'react';
-import Team from './TeamSection';
-import Blog from './BlogSection';
-import AboutVideo from './VideoSection';
+import Team from './_TeamSection';
+import Blog from './_BlogSection';
+import AboutVideo from './_VideoSection';
 // import AboutCounter from './CounterSection';
-import Testimonial from './TestimonialSection';
+// import Testimonial from './_TestimonialSection';
 import ScrollToTop from '../../components/Common/ScrollTop';
 
 

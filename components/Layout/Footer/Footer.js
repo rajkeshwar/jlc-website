@@ -12,7 +12,7 @@ const Footer = (props) => {
                         <div className="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                             <div className="footer-logo mb-30">
                                 <Link href="/">
-                                    <img src={footerLogo ? footerLogo : `img/logo/logo.png`} alt="Logo" />
+                                    <img src={footerLogo ? footerLogo : `/img/logo/logo.png`} alt="Logo" />
                                 </Link>
                             </div>
                             <div className="textwidget pr-60 md-pr-14">
@@ -77,7 +77,7 @@ const Footer = (props) => {
                             <h3 className="widget-title">Recent Posts</h3>
                             <div className="recent-post mb-20">
                                 <div className="post-img">
-                                    <img src={`img/blog/post1.jpg`} alt="blog image" />
+                                    <img src={`/img/blog/post1.jpg`} alt="blog image" />
                                 </div>
                                 <div className="post-item">
                                     <div className="post-desc">
@@ -91,7 +91,7 @@ const Footer = (props) => {
                             </div>
                             <div className="recent-post mb-20">
                                 <div className="post-img">
-                                    <img src={`img/blog/post2.jpg`} alt="blog image" />
+                                    <img src={`/img/blog/post2.jpg`} alt="blog image" />
                                 </div>
                                 <div className="post-item">
                                     <div className="post-desc">

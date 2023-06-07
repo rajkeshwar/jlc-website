@@ -5,32 +5,32 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 const photos = [
   {
-    src: "img/gallery/1.jpg",
+    src: "/img/gallery/1.jpg",
     width: 1,
     height: 1,
   },
   {
-    src: "img/gallery/2.jpg",
+    src: "/img/gallery/2.jpg",
     width: 1,
     height: 1,
   },
   {
-    src: "img/gallery/3.jpg",
+    src: "/img/gallery/3.jpg",
     width: 1,
     height: 1,
   },
   {
-    src: "img/gallery/4.jpg",
+    src: "/img/gallery/4.jpg",
     width: 1,
     height: 1,
   },
   {
-    src: "img/gallery/5.jpg",
+    src: "/img/gallery/5.jpg",
     width: 1,
     height: 1,
   },
   {
-    src: "img/gallery/6.jpg",
+    src: "/img/gallery/6.jpg",
     width: 1,
     height: 1,
   },
@@ -97,7 +97,7 @@ const CanvasMenu = (props) => {
           </ModalGateway>
         </div>
         <div className="map-img">
-          <img src={`img/map.jpg`} alt="" />
+          <img src={`/img/map.jpg`} alt="" />
         </div>
         <div className="canvas-contact">
           <ul className="social">

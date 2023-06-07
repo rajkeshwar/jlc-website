@@ -1,12 +1,17 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
-import CurriculumPart from "./CurriculumPart";
-import FaqPart from "./FaqPart";
-import InstructorPart from "./InstructorPart";
-import OverviewPart from "./OverviewPart";
-import ReviewPart from "./ReviewPart";
+import CurriculumPart from "./_CurriculumPart";
+import FaqPart from "./_FaqPart";
+import InstructorPart from "./_InstructorPart";
+import OverviewPart from "./_OverviewPart";
+import ReviewPart from "./_ReviewPart";
+// import { useContext } from "react";
+// import { CourseContext } from "@/conext/context";
 
-const CourseDetailsTab = () => {
+const CourseDetailsTab = ({course}) => {
+
+  // const course = useContext(CourseContext);
+
   const tabStyle = "intro-tabs tabs-box";
   const courseDetailsTabs = [
     "Overview",
@@ -15,6 +20,10 @@ const CourseDetailsTab = () => {
     "Faq",
     "Reviews",
   ];
+
+  console.log('course ======= ', course);
+
+  // if (!course) return '';
 
   return (
     <div className="intro-info-tabs">
@@ -28,11 +37,11 @@ const CourseDetailsTab = () => {
         </TabList>
 
         <TabPanel>
-          <OverviewPart />
+          <OverviewPart course={course}/>
         </TabPanel>
 
         <TabPanel>
-          <CurriculumPart />
+          {/* <CurriculumPart course={course}/> */}
         </TabPanel>
 
         <TabPanel>

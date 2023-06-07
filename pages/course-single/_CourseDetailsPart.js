@@ -1,8 +1,8 @@
 import React from 'react';
-import CourseSidebar from './CourseSidebar';
-import CourseDetailsTab from './CourseDetailsTab';
+import CourseSidebar from './_CourseSidebar';
+import CourseDetailsTab from './_CourseDetailsTab';
 
-const CourseDetailsPart = () => {
+const CourseDetailsPart = ({course}) => {
 
     return (
         <React.Fragment>
@@ -10,7 +10,7 @@ const CourseDetailsPart = () => {
                 <div className="container">
                     <div className="row clearfix">
                         <div className="col-lg-8 md-mb-50">
-                            <CourseDetailsTab />
+                            <CourseDetailsTab course={course}/>
                         </div>
                         <div className="video-column col-lg-4">
                             <CourseSidebar />

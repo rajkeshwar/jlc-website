@@ -7,7 +7,7 @@ const InstructorPart = () => {
             <div className="row rs-team style1 orange-color transparent-bg clearfix">
                 <div className="col-lg-6 col-md-6 col-sm-12 sm-mb-30">
                     <div className="team-item">
-                        <img src={`img/team/1.jpg`} alt="" />
+                        <img src={`/img/team/1.jpg`} alt="" />
                         <div className="content-part">
                             <h4 className="name"><a href="#">Jhon Pedrocas</a></h4>
                             <span className="designation">Professor</span>
@@ -22,7 +22,7 @@ const InstructorPart = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="team-item">
-                        <img src={`img/team/2.jpg`} alt="" />
+                        <img src={`/img/team/2.jpg`} alt="" />
                         <div className="content-part">
                             <h4 className="name"><a href="#">Jhon Pedrocas</a></h4>
                             <span className="designation">Professor</span>

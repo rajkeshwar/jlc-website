@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import SectionTitle from '../../components/Common/SectionTitle';
 
@@ -59,7 +59,7 @@ const AboutCounter = () => {
                                         <div className="counter-item one">
                                             <img className="count-img" src={counter.countIcon} alt="" />
                                             <h2 className="number rs-count">
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
+                                                {/* <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} /> */}
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <span ref={countUpRef} />
@@ -76,7 +76,7 @@ const AboutCounter = () => {
                                         <div className="counter-item two">
                                             <img className="count-img" src={counter.countIcon} alt="" />
                                             <h2 className="number rs-count">3.
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
+                                                {/* <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} /> */}
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <span ref={countUpRef} />
@@ -93,7 +93,7 @@ const AboutCounter = () => {
                                         <div className="counter-item three">
                                             <img className="count-img" src={counter.countIcon} alt="" />
                                             <h2 className="number rs-count">
-                                                <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
+                                                {/* <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} /> */}
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <span ref={countUpRef} />

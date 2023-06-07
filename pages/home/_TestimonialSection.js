@@ -7,17 +7,17 @@ const testimonials = [
   {
     description:
       "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.",
-    icon: "img/testimonial/style5/1.png",
+    icon: "/img/testimonial/style5/1.png",
   },
   {
     description:
       "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.",
-    icon: "img/testimonial/style5/2.png",
+    icon: "/img/testimonial/style5/2.png",
   },
   {
     description:
       "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.",
-    icon: "img/testimonial/style5/3.png",
+    icon: "/img/testimonial/style5/3.png",
   },
 ];
 
@@ -56,7 +56,7 @@ const Testimonial = () => {
               <SingleTestimonial
                 key={idx}
                 itemClass="testi-item"
-                quoteImage={`img/testimonial/style5/quote2.png`}
+                quoteImage={`/img/testimonial/style5/quote2.png`}
                 authorImage={testim.icon}
                 Title="David Warner"
                 Designation="Web Developer"

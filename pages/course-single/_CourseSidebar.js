@@ -10,7 +10,7 @@ const CourseSidebar = () => {
         <div className="inner-column">
             <ModalVideo channel='youtube' isOpen={isOpen} videoId='YLN1Argi7ik' onClose={() => { openModal(); }} />
             <div className="intro-video media-icon orange-color2">
-                <img className="video-img" src={`img/about/about-video-bg2.png`} alt="Video Image" />
+                <img className="video-img" src={`/img/about/about-video-bg2.png`} alt="Video Image" />
                 <span className="popup-videos" onClick={() => { openModal(); }} >
                     <i className="fa fa-play"></i>
                 </span>

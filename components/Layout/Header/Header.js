@@ -5,11 +5,11 @@ import CanvasMenu from './CanvasMenu';
 import TopHeader from './TopBar';
 import Link from 'next/link';
 
-const normalLogo = 'img/logo/lite-logo.png';
-const darkLogo = 'img/logo/dark-logo.png';
+const normalLogo = '/img/logo/lite-logo.png';
+const darkLogo = '/img/logo/dark-logo.png';
 
-const productImg1 = 'img/shop/1.jpg';
-const productImg2 = 'img/shop/2.jpg';
+const productImg1 = '/img/shop/1.jpg';
+const productImg2 = '/img/shop/2.jpg';
 
 
 const Header = (props) => {

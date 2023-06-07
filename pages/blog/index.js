@@ -1,28 +1,27 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import BlogMain from './BlogMain';
-import Header from '../../components/Layout/Header/Header';
-import Footer from '../../components/Layout/Footer/Footer';
-import Newsletter from '../../components/Common/Newsletter';
-import ScrollToTop from '../../components/Common/ScrollTop';
-import OffWrap from '../../components/Layout/Header/OffWrap';
-import SiteBreadcrumb from '../../components/Common/Breadcumb';
-import SearchModal from '../../components/Layout/Header/SearchModal';
+import BlogMain from './_BlogMain';
+import Header from '@/components/Layout/Header/Header';
+import Footer from '@/components/Layout/Footer/Footer';
+import Newsletter from '@/components/Common/Newsletter';
+import ScrollToTop from '@/components/Common/ScrollTop';
+import OffWrap from '@/components/Layout/Header/OffWrap';
+import SiteBreadcrumb from '@/components/Common/Breadcumb';
+import SearchModal from '@/components/Layout/Header/SearchModal';
 
 // Image
-import favIcon from '../../assets/img/fav-orange.png';
-import Logo from '../../assets/img/logo/dark-logo.png';
-import footerLogo from '../../assets/img/logo/lite-logo.png';
-
-import bannerbg from '../../assets/img/breadcrumbs/2.jpg';
+const favIcon = '/img/fav-orange.png';
+const Logo = '/img/logo/dark-logo.png';
+const footerLogo = '/img/logo/lite-logo.png';
+const bannerbg = '/img/breadcrumbs/2.jpg';
 
 const Blog = () => {
     return (
         <React.Fragment>
-            <Helmet>
+            {/* <Helmet>
                 <link rel="icon" href={favIcon} />
-            </Helmet>
+            </Helmet> */}
             <OffWrap />
             <Header
                 parentMenu='blog'
@@ -66,7 +65,7 @@ const Blog = () => {
             />
             {/* scrolltop-end */}
 
-            <SearchModal />
+            {/* <SearchModal /> */}
         </React.Fragment>
     );
 }

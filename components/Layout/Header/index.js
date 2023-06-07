@@ -47,8 +47,8 @@ const Header = (props) => {
 								<div className="col-lg-2">
 									<div className="logo-area hidden-md">
 										<Link href="/">
-											<img className="normal-logo" src={headerNormalLogo ? headerNormalLogo : `img/logo/lite-logo.png`} alt="" />
-											<img className="sticky-logo" src={headerStickyLogo ? headerStickyLogo : `img/logo/dark-logo.png`} alt="" />
+											<img className="normal-logo" src={headerNormalLogo ? headerNormalLogo : `/img/logo/lite-logo.png`} alt="" />
+											<img className="sticky-logo" src={headerStickyLogo ? headerStickyLogo : `/img/logo/dark-logo.png`} alt="" />
 										</Link>
 									</div>
 								</div>
@@ -56,8 +56,8 @@ const Header = (props) => {
 									<div className="rs-menu-area">
 										<div className="main-menu">
 											<div className="mobile-menu md-display-block">
-												<Link href="/" className="mobile-normal-logo"><img className="normal-logo" src={mobileNormalLogo ? mobileNormalLogo : `img/logo/dark-logo.png`} alt="" /></Link>
-												<Link href="/" className="mobile-sticky-logo"><img src={`img/logo/dark-logo.png`} alt="logo" /></Link>
+												<Link href="/" className="mobile-normal-logo"><img className="normal-logo" src={mobileNormalLogo ? mobileNormalLogo : `/img/logo/dark-logo.png`} alt="" /></Link>
+												<Link href="/" className="mobile-sticky-logo"><img src={`/img/logo/dark-logo.png`} alt="logo" /></Link>
 												<Link href="#" className="rs-menu-toggle" onClick={() => {
 													setMenuOpen(!menuOpen)
 												}}>
@@ -98,7 +98,7 @@ const Header = (props) => {
 																	<span className="quantity">1 × $30.00</span>
 																</div>
 																<div className="product-image">
-																	<Link href="/shop/cart"><img src={`img/shop/1.jpg`} alt="Product Image" /></Link>
+																	<Link href="/shop/cart"><img src={`/img/shop/1.jpg`} alt="Product Image" /></Link>
 																</div>
 															</li>
 															<li className="display-flex">
@@ -110,7 +110,7 @@ const Header = (props) => {
 																	<span className="quantity">1 × $30.00</span>
 																</div>
 																<div className="product-image">
-																	<Link href="/shop/cart"><img src={`img/shop/1.jpg`} alt="Product Image" /></Link>
+																	<Link href="/shop/cart"><img src={`/img/shop/1.jpg`} alt="Product Image" /></Link>
 																</div>
 															</li>
 														</ul>
@@ -154,7 +154,7 @@ const Header = (props) => {
 				</header>
 				<CanvasMenu
 					canvasClass={CanvasClass ? CanvasClass : "right_menu_togle orange_color hidden-md"}
-					canvasLogo={CanvasLogo ? CanvasLogo : `img/logo/dark-logo.png`}
+					canvasLogo={CanvasLogo ? CanvasLogo : `/img/logo/dark-logo.png`}
 				/>
 			</div>
 		</React.Fragment>

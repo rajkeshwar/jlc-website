@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import BlogDetails from './BlogDetails';
-import SinglePostSidebar from './SinglePostSidebar';
+import BlogDetails from './_BlogDetails';
+import SinglePostSidebar from './_SinglePostSidebar';
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
@@ -16,9 +16,9 @@ import Logo from '../../assets/img/logo/dark-logo.png';
 import footerLogo from '../../assets/img/logo/lite-logo.png';
 
 // Breadcrumbs Background Image
-import bannerbg from '../../assets/img/breadcrumbs/inner13.jpg';
+import bannerbg from '../../assets/img/breadcrumbs/6.jpg';
 
-const SinglePostLeftSidebar = () => {
+const SinglePostFullWidth = () => {
 
     return (
         <React.Fragment>
@@ -42,7 +42,7 @@ const SinglePostLeftSidebar = () => {
             />
 
             <SiteBreadcrumb
-                pageTitle="Single Post Left Sidebar"
+                pageTitle="Single Post Full Width"
                 pageName="Blog"
                 breadcrumbsImg={bannerbg}
             />
@@ -50,16 +50,7 @@ const SinglePostLeftSidebar = () => {
             {/* Blog Details Start */}
             <div className="rs-inner-blog orange-style pt-100 pb-100 md-pt-80 md-pb-80">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-12">
-                            <div className="widget-area">
-                                <SinglePostSidebar />
-                            </div>
-                        </div>
-                        <div className="col-lg-8 pr-50 md-pr-14">
-                            <BlogDetails />
-                        </div>
-                    </div>
+                    <BlogDetails />
                 </div>
             </div>
             {/* Blog Details End */}
@@ -86,7 +77,7 @@ const SinglePostLeftSidebar = () => {
 }
 
 
-export default SinglePostLeftSidebar;
+export default SinglePostFullWidth;
 
 
 

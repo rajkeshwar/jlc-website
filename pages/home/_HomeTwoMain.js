@@ -1,13 +1,13 @@
 import BannerDefault from '@/components/Banner/BannerDefault';
 import ScrollToTop from '@/components/Common/ScrollTop';
 import React from 'react';
-import About from './AboutSection';
-import Blog from './BlogSection';
-import Categories from './CategoriesSection';
-import Courses from './CourseSection';
-import CTA from './CtaSection';
-import Faq from './FaqSection';
-import Testimonial from './TestimonialSection';
+import About from './_AboutSection';
+import Blog from './_BlogSection';
+import Categories from './_CategoriesSection';
+import Courses from './_CourseSection';
+import CTA from './_CtaSection';
+import Faq from './_FaqSection';
+import Testimonial from './_TestimonialSection';
 
 const HomeTwoMain = () => {
 	return (

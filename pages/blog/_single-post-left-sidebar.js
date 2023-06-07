@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import BlogDetails from './BlogDetails';
-import SinglePostSidebar from './SinglePostSidebar';
+import BlogDetails from './_BlogDetails';
+import SinglePostSidebar from './_SinglePostSidebar';
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
@@ -16,9 +16,9 @@ import Logo from '../../assets/img/logo/dark-logo.png';
 import footerLogo from '../../assets/img/logo/lite-logo.png';
 
 // Breadcrumbs Background Image
-import bannerbg from '../../assets/img/breadcrumbs/5.jpg';
+import bannerbg from '../../assets/img/breadcrumbs/inner13.jpg';
 
-const SinglePostRightSidebar = () => {
+const SinglePostLeftSidebar = () => {
 
     return (
         <React.Fragment>
@@ -31,8 +31,8 @@ const SinglePostRightSidebar = () => {
                 secondParentMenu='blogSingle'
                 headerNormalLogo={Logo}
                 headerStickyLogo={Logo}
-                mobileNormalLogo={Logo}
                 CanvasLogo={Logo}
+                mobileNormalLogo={Logo}
                 CanvasClass="right_menu_togle hidden-md"
                 headerClass="full-width-header header-style1 home8-style4"
                 TopBar='enable'
@@ -42,7 +42,7 @@ const SinglePostRightSidebar = () => {
             />
 
             <SiteBreadcrumb
-                pageTitle="Single Post Right Sidebar"
+                pageTitle="Single Post Left Sidebar"
                 pageName="Blog"
                 breadcrumbsImg={bannerbg}
             />
@@ -51,7 +51,7 @@ const SinglePostRightSidebar = () => {
             <div className="rs-inner-blog orange-style pt-100 pb-100 md-pt-80 md-pb-80">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-12 order-last">
+                        <div className="col-lg-4 col-md-12">
                             <div className="widget-area">
                                 <SinglePostSidebar />
                             </div>
@@ -86,7 +86,7 @@ const SinglePostRightSidebar = () => {
 }
 
 
-export default SinglePostRightSidebar;
+export default SinglePostLeftSidebar;
 
 
 

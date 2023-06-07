@@ -1,14 +1,14 @@
 import React from 'react';
-import CourseDetailsPart from './CourseDetailsPart';
+import CourseDetailsPart from './_CourseDetailsPart';
 import ScrollToTop from '@/components/Common/ScrollTop';
 
-const CourseDetailsMain = () => {
+const CourseDetailsMain = ({course}) => {
 
     return (
         <React.Fragment>
             
             {/* CourseDetails Start */}
-            <CourseDetailsPart />
+            <CourseDetailsPart course={course}/>
             {/* CourseDetails End */}
 
 			{/* scrolltop-start */}

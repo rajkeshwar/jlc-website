@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { lowerCase } from 'lodash-es';
 
 const CourseSingleTwo = (props) => {
     const { courseClass, courseImg, courseTitle, catLink, coursePrice, courseCategory, userCount, userRating } = props;
@@ -16,7 +17,7 @@ const CourseSingleTwo = (props) => {
                     <li><span className="price">{coursePrice ? coursePrice : '55.00'}</span></li>
                     <li><Link className="categorie" href={catLink ? catLink : 'course-categories'}>{courseCategory ? courseCategory : 'Web Development'}</Link></li>
                 </ul>
-                <h3 className="title"><Link href="/course/course-single">{courseTitle ? courseTitle : 'Become a PHP Master and Make Money Fast'}</Link></h3>
+                <h3 className="title"><Link href="/courses/jdbc">{courseTitle ? courseTitle : 'Become a PHP Master and Make Money Fast'}</Link></h3>
                 <div className="bottom-part">
                     <div className="info-meta">
                         <ul>
@@ -30,7 +31,7 @@ const CourseSingleTwo = (props) => {
                         </ul>
                     </div>
                     <div className="btn-part">
-                        <Link href="/course/course-single">
+                        <Link href={`/courses/${lowerCase(courseTitle)}`}>
                             {props.btnText}<i className="flaticon-right-arrow"></i>
                         </Link>
                     </div>

@@ -1,0 +1,3 @@
+.rs-menu ul.nav-menu li.menu-item-has-children > a:before {
+  content: "" !important;
+}

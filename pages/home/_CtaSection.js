@@ -9,7 +9,7 @@ const CTA = () => {
             <div className="row align-items-center">
                 <div className="col-lg-6">
                     <div className="img-part">
-                        <img src={`img/cta/home1.jpg`} alt="Image" />
+                        <img src={`/img/cta/home1.jpg`} alt="Image" />
                     </div>
                 </div>
                 <div className="col-lg-6">
