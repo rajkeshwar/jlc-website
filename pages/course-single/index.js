@@ -35,7 +35,7 @@ const CourseSingle = ({ course }) => {
       {/* breadcrumb-area-start */}
 
       {/* Course Details Main */}
-      <CourseDetailsMain course={course}/>
+      <CourseDetailsMain/>
       {/* Course Details Main */}
 
       <Newsletter

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import BlogDetails from './_BlogDetails';
 import SinglePostSidebar from './_SinglePostSidebar';
 import Header from '../../components/Layout/Header/Header';
@@ -11,7 +11,7 @@ import SiteBreadcrumb from '../../components/Common/Breadcumb';
 import SearchModal from '../../components/Layout/Header/SearchModal';
 
 // Image
-import favIcon from '../../assets/img/fav-orange.png';
+// import favIcon from '../../assets/img/fav-orange.png';
 import Logo from '../../assets/img/logo/dark-logo.png';
 import footerLogo from '../../assets/img/logo/lite-logo.png';
 
@@ -22,9 +22,9 @@ const SinglePostFullWidth = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
+            {/* <Helmet>
                 <link rel="icon" href={favIcon} />
-            </Helmet>
+            </Helmet> */}
             <OffWrap />
             <Header
                 parentMenu='blog'

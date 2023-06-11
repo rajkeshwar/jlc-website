@@ -1,13 +1,11 @@
-import React from "react";
-import Header from "@/components/Layout/Header/Header";
-import Footer from "@/components/Layout/Footer/Footer";
-import OffWrap from "@/components/Layout/Header/OffWrap";
-import SearchModal from "@/components/Layout/Header/SearchModal";
-import Newsletter from "@/components/Common/Newsletter";
 import SiteBreadcrumb from "@/components/Common/Breadcumb";
+import Newsletter from "@/components/Common/Newsletter";
+import Footer from "@/components/Layout/Footer/Footer";
+import Header from "@/components/Layout/Header/Header";
+import OffWrap from "@/components/Layout/Header/OffWrap";
+import { getFilePaths } from "@/utils/ssr";
+import React from "react";
 import CourseMain from "./_CourseMain";
-import fs from "fs";
-import { join } from "path";
 
 const CourseTwo = ({ courses }) => {
   return (
@@ -55,19 +53,12 @@ const CourseTwo = ({ courses }) => {
 export default CourseTwo;
 
 export async function getStaticProps() {
-  const COURSE_PATH = join(process.cwd(), "data/courses");
-
-  const courses = fs
-    .readdirSync(COURSE_PATH)
-    // Remove file extensions for page paths
-    .map((path) => path.replace(/\.(json|yml)?$/, ""))
-    // Construct the course object from the path
+  
+  const courses = getFilePaths()
     .map((course, idx) => ({
-      image: `img/courses/${idx + 1}.jpg`,
+      image: `/img/courses/${idx + 1}.jpg`,
       title: course,
     }));
-
-  console.log("couresList ", courses);
 
   return { props: { courses } };
 }

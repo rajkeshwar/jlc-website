@@ -5,31 +5,22 @@ import FaqPart from "./_FaqPart";
 import InstructorPart from "./_InstructorPart";
 import OverviewPart from "./_OverviewPart";
 import ReviewPart from "./_ReviewPart";
-// import { useContext } from "react";
-// import { CourseContext } from "@/conext/context";
+import { useContext } from "react";
+import { CourseContext } from "@/conext/context";
+import Loading from "@/components/Loading";
+import { COURSE_DETAILS_TABS } from "@/utils/constants";
 
-const CourseDetailsTab = ({course}) => {
+const CourseDetailsTab = () => {
 
-  // const course = useContext(CourseContext);
+  const course = useContext(CourseContext);
 
-  const tabStyle = "intro-tabs tabs-box";
-  const courseDetailsTabs = [
-    "Overview",
-    "Curriculum",
-    "Instructor",
-    "Faq",
-    "Reviews",
-  ];
-
-  console.log('course ======= ', course);
-
-  // if (!course) return '';
+  if (!course) return <Loading/>
 
   return (
     <div className="intro-info-tabs">
       <Tabs>
-        <TabList className={tabStyle}>
-          {courseDetailsTabs.map((tabName, index) => (
+        <TabList className="intro-tabs tabs-box">
+          {COURSE_DETAILS_TABS.map((tabName, index) => (
             <Tab key={index}>
               <button>{tabName}</button>
             </Tab>
@@ -37,11 +28,11 @@ const CourseDetailsTab = ({course}) => {
         </TabList>
 
         <TabPanel>
-          <OverviewPart course={course}/>
+          <OverviewPart overview={course.overview}/>
         </TabPanel>
 
         <TabPanel>
-          {/* <CurriculumPart course={course}/> */}
+          <CurriculumPart curriculum={course.curriculum}/>
         </TabPanel>
 
         <TabPanel>

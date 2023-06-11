@@ -1,4 +1,5 @@
-import { capitalize } from "@/utils/common";
+
+import { pageLinks } from "@/utils/constants";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -13,9 +14,10 @@ const MenuItems = (props) => {
       : "menu-item-has-children";
   };
 
-  const pageLinks = ["home", "about", "courses", "blog", "contact"];
-
-  const toHref = (route) => (route === "home" ? "/" : "/" + route);
+  const toHref = (title) => {
+    const route = String(title).toLowerCase();
+    return route === "home" ? "/" : "/" + route
+  };
 
   useEffect(() => {
     location = window.location;
@@ -25,7 +27,7 @@ const MenuItems = (props) => {
     <React.Fragment>
       {pageLinks.map((page, index) => (
         <li className={activeClass(page)} key={index}>
-          <Link href={toHref(page)}>{capitalize(page)}</Link>
+          <Link href={toHref(page)}>{page}</Link>
         </li>
       ))}
     </React.Fragment>

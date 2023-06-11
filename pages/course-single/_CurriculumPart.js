@@ -9,11 +9,15 @@ import {
     AccordionItemPanel,
     AccordionItemButton,
 } from 'react-accessible-accordion';
+import Loading from '@/components/Loading';
 
-const CurriculumPart = () => {
+const CurriculumPart = ({ curriculum }) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const openModal = () => setIsOpen(!isOpen);
+
+    if (!curriculum) return <Loading/>
+
     return (
         <div className="content">
             <Accordion className="accordion-box" preExpanded={'a'}>

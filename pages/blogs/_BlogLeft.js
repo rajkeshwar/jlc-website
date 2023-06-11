@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';
 import Newsletter from '../../components/Common/Newsletter';
@@ -26,15 +26,15 @@ import favIcon from '../../assets/img/fav-orange.png';
 import Logo from '../../assets/img/logo/dark-logo.png';
 import footerLogo from '../../assets/img/logo/lite-logo.png';
 
-import bannerbg from '../../assets/img/breadcrumbs/5.jpg';
+import bannerbg from '../../assets/img/breadcrumbs/4.jpg';
 
-const BlogRight = () => {
+const BlogLeft = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
+            {/* <Helmet>
                 <link rel="icon" href={favIcon} />
-            </Helmet>
+            </Helmet> */}
             <OffWrap />
             <Header
                 parentMenu='blog'
@@ -48,12 +48,12 @@ const BlogRight = () => {
                 TopBar='enable'
                 TopBarClass="topbar-area home8-topbar"
                 emailAddress='support@website.com'
-                Location='374 William S Canning Blvd, MA 2721, USA '
+                Location='374 William S Canning Blvd, MA 2721, USA'
             />
 
             {/* breadcrumb-area-start */}
             <SiteBreadcrumb
-                pageTitle="Blog Right Sidebar"
+                pageTitle="Blog Left Sidebar"
                 pageName="Blog"
                 breadcrumbsImg={bannerbg}
             />
@@ -63,13 +63,13 @@ const BlogRight = () => {
             <div className="rs-inner-blog orange-style pt-100 pb-100 md-pt-80 md-pb-80">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-12 order-last">
+                        <div className="col-lg-4 col-md-12 pr-50 md-pr-14">
                             <div className="widget-area">
                                 <BlogSidebar />
                             </div>
                         </div>
 
-                        <div className="col-lg-8 pr-50 md-pr-14">
+                        <div className="col-lg-8">
                             <div className='row'>
                                 <div className='col-lg-12 mb-70 md-mb-50'>
                                     <SinglePostSix
@@ -196,4 +196,4 @@ const BlogRight = () => {
     );
 }
 
-export default BlogRight;
+export default BlogLeft;

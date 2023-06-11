@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import BlogDetails from './_BlogDetails';
 import SinglePostSidebar from './_SinglePostSidebar';
 import Header from '../../components/Layout/Header/Header';
@@ -22,9 +22,9 @@ const SinglePostLeftSidebar = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
+            {/* <Helmet>
                 <link rel="icon" href={favIcon} />
-            </Helmet>
+            </Helmet> */}
             <OffWrap />
             <Header
                 parentMenu='blog'
