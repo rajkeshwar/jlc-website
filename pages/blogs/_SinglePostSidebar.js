@@ -1,14 +1,13 @@
-import CategoriesWidget from '@/components/Widget/CategoriesWidget';
-import RecentPost from '@/components/Widget/RecentPost';
+import CategoriesWidget from "@/components/Widget/CategoriesWidget";
+import RecentPost from "@/components/Widget/RecentPost";
 
-const SinglePostSidebar = () => {
-
-    return (
-        <>
-            <RecentPost />
-            <CategoriesWidget />
-        </>
-    );
-}
+const SinglePostSidebar = ({ blogs, categories }) => {
+  return (
+    <>
+      <RecentPost blogs={blogs} />
+      <CategoriesWidget categories={categories} />
+    </>
+  );
+};
 
 export default SinglePostSidebar;

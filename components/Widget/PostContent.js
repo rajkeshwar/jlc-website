@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
 const PostContent = ({ blog }) => {
   if (!blog) return "";
-
+  
   useLayoutEffect(() => {
     Array.from(document.querySelectorAll('pre')).forEach(pre => {
       pre.classList.add('prettyprint');

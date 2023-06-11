@@ -1,9 +1,9 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-const SinglePostSix = ({ blog, blogButtonClass, blogClass }) => {
+const SinglePostSix = ({ blog }) => {
   return (
-    <div className={clsx(blogClass, "blog-item")}>
+    <div className={clsx("blog-item")}>
       <div className="blog-content">
         <h3 className="blog-title">
           <Link href={`/blogs/${blog.routeLink}`}>{blog.title}</Link>
@@ -29,7 +29,7 @@ const SinglePostSix = ({ blog, blogButtonClass, blogClass }) => {
           </ul>
         </div>
         <div className="blog-desc">{blog.description}</div>
-        <div className={clsx("blog-button", blogButtonClass)}>
+        <div className={clsx("blog-button")}>
           <Link href={`/blogs/${blog.routeLink}`} className="blog-btn">
             Continue Reading...
           </Link>

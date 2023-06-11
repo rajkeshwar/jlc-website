@@ -13,16 +13,15 @@ import footerLogo from "@/assets/img/logo/lite-logo.png";
 
 // Breadcrumbs Background Image
 
+import Loading from "@/components/Loading";
 import PostContent from "@/components/Widget/PostContent";
-import { getFilePaths } from "@/utils/ssr";
-import fs from "fs";
-import matter from "gray-matter";
-import { join } from "path";
-import { remark } from "remark";
-import html from "remark-html";
-import slugify from "slugify";
+import { titleSlugify } from "@/utils/common";
+import { getAllBlogs } from "@/utils/ssr";
+import { keyBy, values } from "lodash-es";
 
-const SinglePostRightSidebar = ({ blog }) => {
+const SinglePostRightSidebar = ({ blog, blogs, categories }) => {
+  if (!blog) return <Loading />;
+
   return (
     <React.Fragment>
       <OffWrap />
@@ -42,7 +41,7 @@ const SinglePostRightSidebar = ({ blog }) => {
       />
 
       <SiteBreadcrumb
-        pageTitle="Single Post Right Sidebar"
+        pageTitle={blog.title}
         pageName="Blog"
         breadcrumbsImg={`/img/breadcrumbs/5.jpg`}
       />
@@ -53,7 +52,7 @@ const SinglePostRightSidebar = ({ blog }) => {
           <div className="row">
             <div className="col-lg-4 col-md-12 order-last">
               <div className="widget-area">
-                <SinglePostSidebar />
+                <SinglePostSidebar blogs={blogs} categories={categories}/>
               </div>
             </div>
             <div className="col-lg-8 pr-50 md-pr-14">
@@ -83,79 +82,27 @@ const SinglePostRightSidebar = ({ blog }) => {
 
 export default SinglePostRightSidebar;
 
-const markdownMap = new Map();
-
 export async function getStaticProps({ params }) {
-  // const fullPath = join("data", "blogs", `${params.slug}.md`);
-  // const fileContents = fs.readFileSync(fullPath, "utf8");
+  const cachedBlogs = await getAllBlogs();
+  const cachedBlogMap = keyBy(cachedBlogs, "routeLink");
+  const blogCategories = cachedBlogs.map(blog => blog.category)
 
-  // // Use gray-matter to parse the post metadata section
-  // const matterResult = matter(fileContents);
-
-  // // Use remark to convert markdown into HTML string
-  // const content = await remark()
-  //   .use(html)
-  //   .process(matterResult.content);
-
-  // const htmlContent = content.toString();
-
-  // // Combine the data with the id and contentHtml
-  // const postData = {
-  //   id: params.slug,
-  //   htmlContent,
-  //   ...matterResult.data,
-  // };
-
-  console.log('slug ======= ', params.slug)
-
-  const blog = await getMarkdownContent(params.slug);
   return {
     props: {
-      blog
+      blog: cachedBlogMap[params.slug],
+      blogs: values(cachedBlogMap),
+      categories: [...new Set(blogCategories)]
     },
   };
 }
 
 export async function getStaticPaths() {
-  const paths = await getFilePaths("blogs").map(async (slug) => {
-    const resp = await getMarkdownContent(slug);
-    console.log("resp ", resp.slug);
-    return await resp.slug;
+  const blogPaths = (await getAllBlogs()).map((blog) => {
+    return { params: { slug: titleSlugify(blog.title) } };
   });
 
   return {
-    paths: paths.filter((path) => path).map(async (slug) => {
-      console.log('slug ', slug)
-      return { params: { slug: await slug } }
-    }),
+    paths: blogPaths,
     fallback: true,
   };
-}
-
-async function getMarkdownContent(slug) {
-  const fullPath = join("data", "blogs", `${slug}.md`);
-
-  if (markdownMap.has(fullPath)) {
-    return await markdownMap.get(fullPath);
-  }
-
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-
-  // Use gray-matter to parse the post metadata section
-  const { content, data } = matter(fileContents);
-
-  // Use remark to convert markdown into HTML string
-  const htmlContent = await remark().use(html).process(content).toString();
-
-  // Combine the data with the id and contentHtml
-  const fileData = {
-    id: slug,
-    htmlContent,
-    fontmatter: data,
-    slug: slugify(data.title),
-  };
-
-  markdownMap.set(fullPath, fileData);
-
-  return await markdownMap.get(fullPath);
 }
