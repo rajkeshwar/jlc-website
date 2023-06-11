@@ -5,8 +5,6 @@ import SectionTitle from "@/components/Common/SectionTitle";
 import CourseSingleTwo from "@/components/Courses/CourseSingleTwo";
 // Courses Image
 
-import bgImg from "@/assets/img/bg/home-8.jpg";
-
 const courseList = [
   {
     title: "Fitness Development Strategy Buildup Laoreet",
@@ -36,9 +34,9 @@ const courseList = [
 
 const bgStyle = {
   backgroundImage: `url(img/bg/home-8.jpg)`,
-  "background-size": "cover",
-  "background-repeat": "no-repeat",
-  "background-position": "center center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center center",
 };
 
 const Courses = () => {

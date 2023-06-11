@@ -1,0 +1,43 @@
+---
+name: JDBC Course
+overview:
+  name: JDBC Course
+  description: "<p>JDBC is most popular framework, ultricies vitae velit. Ut nulla
+    tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna,
+    venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris
+    pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis
+    natoque penatibus.</p><p>Eleifend euismod pellentesque vel Phasellus enim magna,
+    varius et commodo ut, ultricies vitae velit. Ut nulla tellus, sagittis vel justo.
+    In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat
+    justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada.
+    Cum sociis natoque penatibus.</p>"
+  reviews:
+    totalStudents: '9999'
+    ratings:
+      value: '4.1'
+      total: '8989'
+    count: '999'
+  whatYouWillLearn:
+  - Phasellus enim magna, varius et commodo ut.
+  - Sed consequat justo non mauris pretium at tempor justo.
+  - Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo,
+  requirements:
+  - Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus,
+    eleifend euismod pellentesque vel, sagittis vel justo
+  - Varius et commodo ut, ultricies vitae velit. Ut nulla tellus.
+  - Phasellus enim magna, varius et commodo ut.
+curriculum:
+- heading: Module 1
+  content:
+  - description: What is JDBC 1
+    duration: 15 Minutes
+  - description: What is JDBC 2
+    duration: 25 Minutes
+  - description: What is JDBC 3
+    duration: 25 Minutes
+- heading: Module 2
+  content:
+  - description: What is JDBC 2
+    duration: 15 Minutes
+  - description: What is JDBC 3
+    duration: 25 Minutes

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import FooterStyleTwo from '@/components/Layout/Footer/FooterStyleTwo';
 import Header from '@/components/Layout/Header/Header';
 import OffWrap from '@/components/Layout/Header/OffWrap';
@@ -9,9 +9,9 @@ import HomeTwoMain from './_HomeTwoMain';
 const Home = () => {
     return (
         <React.Fragment>
-            {/* <Helmet>
-                <link rel="icon" href={favIcon} />
-            </Helmet> */}
+            <Helmet>
+                <link rel="icon" href="Blogs" />
+            </Helmet>
             <OffWrap />
             <Header
                 parentMenu='home'
