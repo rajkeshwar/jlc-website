@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "nex/link";
 
 import topImg from "../../assets/img/banner/bnr3-top.png";
 import bgImg from "../../assets/img/bg/home3.jpg";

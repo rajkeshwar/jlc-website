@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import leftShapeImg from '../../assets/img/banner/left-shape.png';
 import rightShapeImg from '../../assets/img/banner/right-shape.png';

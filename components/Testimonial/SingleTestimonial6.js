@@ -1,4 +1,4 @@
-import Link from 'react-router-dom';
+
 
 const SingleTestimonial6 = (props) => {
 	return(

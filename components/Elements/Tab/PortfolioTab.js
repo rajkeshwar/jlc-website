@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import projectImg1 from '../../../assets/img/project/style5/1.jpg';

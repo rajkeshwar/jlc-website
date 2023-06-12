@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import repairImg from '../../assets/img/slider/style2/house-repair.png';
 

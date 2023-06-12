@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const EventsShort = (props) => {
     const { eventsClass, dateboxClass, catLink1, catLink2, titleClass, titleLink, animateName, animateDelay } = props;

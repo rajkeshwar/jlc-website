@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const DegreeSingle = (props) => {
     const { itemClass, titleClass, titleClass2, descClass, btnText } = props;

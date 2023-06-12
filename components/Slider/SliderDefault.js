@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import FeatureStyle1 from '../Feature/FeatureStyle1';
 
 const SliderDefault = () => {

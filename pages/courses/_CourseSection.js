@@ -1,15 +1,11 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import CourseSingleTwo from "@/components/Courses/CourseSingleTwo";
+import { courseTabList } from "@/utils/constants";
+import Loading from "@/components/Loading";
 
-const courseTabList = [
-    'All', 'Science', 'Business', 'Humanities', 'Diploma'
-];
-
-const CoursePart = ({courses}) => {
-
-  const tabStyle = "gridFilter text-center mb-50 md-mb-30";
-
+const CoursePart = ({ courses }) => {
+  if (!courses) return <Loading />;
   return (
     <div
       id="rs-popular-course"
@@ -17,9 +13,11 @@ const CoursePart = ({courses}) => {
     >
       <div className="container">
         <Tabs>
-          <TabList className={tabStyle}>
+          <TabList className="gridFilter text-center mb-50 md-mb-30">
             {courseTabList.map((tabName, index) => (
-                <Tab key={index}><button>{tabName}</button></Tab>
+              <Tab key={index}>
+                <button>{tabName}</button>
+              </Tab>
             ))}
           </TabList>
 
@@ -39,7 +37,6 @@ const CoursePart = ({courses}) => {
               </div>
             </TabPanel>
           ))}
-
         </Tabs>
       </div>
     </div>

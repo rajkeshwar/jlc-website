@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const TopHeaderTwo = (props) => {
 	const { topBarClass, emailAddress, phoneNumber, Location } = props;

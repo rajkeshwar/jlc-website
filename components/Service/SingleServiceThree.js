@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SingleServiceThree = (props) => {
     const { serviceClass, serviceImg, serviceIcon, Title, Desc } = props;
