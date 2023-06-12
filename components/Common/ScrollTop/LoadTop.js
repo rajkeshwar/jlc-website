@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-
 class LoadTop extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.location !== prevProps.location) {
@@ -12,4 +10,4 @@ class LoadTop extends Component {
     }
 }
 
-export default withRouter(LoadTop); 
+export default LoadTop

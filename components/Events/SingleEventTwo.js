@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SingleEventTwo = (props) => {
     const { eventClass, eventImg, eventLocation, eventDate, eventSchedule, eventTitle, eventDesc } = props;

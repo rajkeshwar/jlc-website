@@ -3,34 +3,8 @@ import Link from "next/link";
 
 import SectionTitle from "@/components/Common/SectionTitle";
 import CourseSingleTwo from "@/components/Courses/CourseSingleTwo";
+import { courseList } from "@/utils/constants";
 // Courses Image
-
-const courseList = [
-  {
-    title: "Fitness Development Strategy Buildup Laoreet",
-    icon: "img/courses/home8/1.jpg",
-  },
-  {
-    title: "The Art of Black and White Photography",
-    icon: "img/courses/home8/2.jpg",
-  },
-  {
-    title: "Fitness Development Strategy Buildup Laoreet",
-    icon: "img/courses/home8/3.jpg",
-  },
-  {
-    title: "Learn Python – Interactive Python Tutorial",
-    icon: "img/courses/home8/4.jpg",
-  },
-  {
-    title: "Fitness Development Strategy Buildup Laoreet",
-    icon: "img/courses/home8/5.jpg",
-  },
-  {
-    title: "Become a PHP Master and Make Money Fast",
-    icon: "img/courses/home8/6.jpg",
-  },
-];
 
 const bgStyle = {
   backgroundImage: `url(img/bg/home-8.jpg)`,

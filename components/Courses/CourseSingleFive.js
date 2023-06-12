@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const CourseSingleFive = (props) => {
     const { courseClass, courseImg, courseTitle, catLink, coursePrice, categoryClass, courseCategory, author, authorImg, userCount, userRating } = props;

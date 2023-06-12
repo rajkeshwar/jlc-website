@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { useEffect } from 'react';
 import Tilty from 'react-tilty';
 import AOS from 'aos';

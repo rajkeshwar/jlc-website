@@ -2,6 +2,7 @@ import SinglePostSix from "@/components/Blog/SinglePostSix";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import SinglePostSidebar from "./_SinglePostSidebar";
+import Loading from "@/components/Loading";
 
 const BlogMain = ({ blogs, categories }) => {
   const [blogsByCategories, setBlogsByCategories] = useState(blogs);
@@ -27,6 +28,8 @@ const BlogMain = ({ blogs, categories }) => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router]);
+
+  if (!(blogs && categories)) return <Loading/>
 
   return (
     <div className="rs-inner-blog orange-style pt-100 pb-100 md-pt-70 md-pb-80">

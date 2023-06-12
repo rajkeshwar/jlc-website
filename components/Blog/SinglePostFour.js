@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SinglePostFour = (props) => {
     const { blogClass, blogImage, blogTitle, contentClass, blogAuthor, blogPublishedDate, categoryClass, blogCategory } = props;

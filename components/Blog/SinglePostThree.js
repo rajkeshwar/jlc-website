@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SinglePostThree = (props) => {
     const { blogClass, blogImage, blogTitle, contentClass, blogDesc, btnClass, cmtQnty, blogAuthor, blogPublishedDate, blogButtonText } = props;

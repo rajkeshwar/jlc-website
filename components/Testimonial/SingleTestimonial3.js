@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const SingleTestimonial3 = (props) => {
     const { itemClass, authorImage, Title, Designation, Description } = props;
