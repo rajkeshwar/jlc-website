@@ -6,28 +6,28 @@ import Loading from "@/components/Loading";
 
 const BlogMain = ({ blogs, categories }) => {
   const [blogsByCategories, setBlogsByCategories] = useState(blogs);
-  // const router = useRouter();
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   if (!location.search) return;
+  useEffect(() => {
+    if (!location.search) return;
 
-  //   const handleRouteChange = (url) => {
-  //     const { category } = router.query;
+    const handleRouteChange = (url) => {
+      const { category } = router.query;
 
-  //     console.log("url ", url, category);
+      console.log("url ", url, category);
 
-  //     setBlogsByCategories(() =>
-  //       blogs.filter((blog) => (!category ? true : blog.category === category))
-  //     );
-  //   };
-  //   router.events.on("routeChangeComplete", handleRouteChange);
+      setBlogsByCategories(() =>
+        blogs.filter((blog) => (!category ? true : blog.category === category))
+      );
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
 
-  //   // If the component is unmounted, unsubscribe
-  //   // from the event with the `off` method:
-  //   return () => {
-  //     router.events.off("routeChangeComplete", handleRouteChange);
-  //   };
-  // }, [router]);
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router]);
 
   if (!(blogs && categories)) return <Loading/>
 
