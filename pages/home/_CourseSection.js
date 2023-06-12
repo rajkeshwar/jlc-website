@@ -32,7 +32,7 @@ const Courses = () => {
           </div>
           <div className="col-md-6">
             <div className="btn-part text-right sm-text-left">
-              <Link href="/course" className="readon">
+              <Link href="/courses" className="readon">
                 View All Courses
               </Link>
             </div>

@@ -87,7 +87,7 @@ const Header = (props) => {
 									<div className="expand-btn-inner search-icon">
 										<ul className="expand-items">
 											<li className="sidebarmenu-search">
-												<Link href="#" onClick={searchModalAdd} className="rs-search" href="#">
+												<Link href="#" onClick={searchModalAdd} className="rs-search" >
 													<i className="flaticon-search"></i>
 												</Link>
 											</li>

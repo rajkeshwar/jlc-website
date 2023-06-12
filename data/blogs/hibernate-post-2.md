@@ -1,12 +1,12 @@
 ---
-title: Steps to develop first Angular application
+title: Steps to develop Second Hibernate application
 author: Srinivas Dande
 date: June 11, 2023
-category: Angular
-description: In this blog you will learn how to develop first Angular application step by step
+category: Hibernate
+description: In this blog you will learn how to develop Second Hibernate application step by step
 ---
 
-### Steps to develop first Angular application
+### Steps to develop Second Hibernate application
 
 1. Install Node JS(10.15.3)
    [Download Nodejs here](https://nodejs.org/en)
@@ -53,7 +53,7 @@ D:\Apps\hello-app>ng serve
 
 
 
- ### index.html 
+### index.html 
 ```html
 <!doctype html>
 <html lang="en">

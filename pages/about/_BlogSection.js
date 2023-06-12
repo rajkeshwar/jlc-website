@@ -43,7 +43,7 @@ const Blog = () => {
                                 </div>
                                 <div className="content-part">
                                     <div className="categorie">
-                                        <Link href="#">Math</Link> &amp; <Link href="#">English</Link>
+                                        <Link href="#">Free Master Class</Link>
                                     </div>
                                     <h4 className="title mb-0"><Link href="/event/style-1">Educational Technology and Mobile Learning</Link></h4>
                                 </div>

@@ -12,7 +12,7 @@ const categories = [
   {
     title: "Computer Science",
     icon: "img/categories/icons/2.png",
-    quantity: 4,
+    quantity: 2,
   },
   {
     title: "Civil Engineering",
@@ -67,7 +67,7 @@ const Categories = () => {
           </div>
           <div className="col-md-6">
             <div className="btn-part text-right sm-text-left">
-              <Link href="course" className="readon">View All Categories</Link>
+              <Link href="courses" className="readon">View All Categories</Link>
             </div>
           </div>
         </div>

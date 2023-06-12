@@ -34,11 +34,11 @@ const TopHeader = (props) => {
                         <ul className="topbar-right">
                             <li className="login-register">
                                 <i className="fa fa-sign-in"></i>
-                                <Link href="/login">Login</Link>/<Link href="/register">Register</Link>
+                                <Link href="/login">Login</Link> &nbsp;&nbsp;<Link href="/register">Create Free Account</Link>
                             </li>
-                            <li className="btn-part">
+                            {/* <li className="btn-part">
                                 <Link href="/contact">Apply Now</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

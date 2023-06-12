@@ -23,8 +23,8 @@ const Home = () => {
                 headerClass="full-width-header header-style1 home1-modifiy"
                 TopBar='enable'
                 TopBarClass="topbar-area dark-primary-bg hidden-md"
-                emailAddress='support@website.com'
-                Location='374 William S Canning Blvd, MA 2721, USA '
+                emailAddress="hello@javalearningcenter.com"
+                phoneNumber="+91-8105815599"
             />
             <HomeTwoMain />
             <FooterStyleTwo />

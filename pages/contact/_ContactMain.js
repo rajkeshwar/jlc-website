@@ -29,7 +29,8 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Address"
                                 iconClass="flaticon-location"
-                                address="228-5 Main Street, Georgia, USA"
+                                address="No. 456, 3rd Floor, 7th Cross Road, Opposite Marigold Hospital, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Above HDFC Bank, Mico Layout,  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BTM 2nd Stage, Bengaluru, &nbsp; &nbsp; Karnataka 560076"
+
                             />
                         </div>
                         <div className="col-md-4">
@@ -37,7 +38,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Email Address"
                                 iconClass="flaticon-email"
-                                email="contact@educavo.com"
+                                email="hello@javalearningcenter.com"
                             />
                         </div>
                         <div className="col-md-4">
@@ -45,7 +46,7 @@ const ContactMain = () => {
                                 boxClass=""
                                 title="Phone Number"
                                 iconClass="flaticon-phone"
-                                phone="(+01)999-999-4444"
+                                phone="(+91)-8105815599"
                             />
                         </div>
                     </div>

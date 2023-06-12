@@ -1,8 +1,7 @@
 ---
-name: Spring Course
+name: Java Course
 overview:
-  name: JSpringDBC Course
-  description: "<p>Spring is most popular framework, ultricies vitae velit. Ut nulla
+  description: "<p>Java is most popular Programming, ultricies vitae velit. Ut nulla
     tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna,
     venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris
     pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis
@@ -16,7 +15,7 @@ overview:
     ratings:
       value: '4.1'
       total: '8989'
-    count: '999'
+    reviewsCount: '999'
   whatYouWillLearn:
   - Phasellus enim magna, varius et commodo ut.
   - Sed consequat justo non mauris pretium at tempor justo.
@@ -29,15 +28,15 @@ overview:
 curriculum:
 - heading: Module 1
   content:
-  - description: What is Spring 1
+  - description: What is Angular 1
     duration: 15 Minutes
-  - description: What is Spring 2
+  - description: What is Angular 2
     duration: 25 Minutes
-  - description: What is Spring 3
+  - description: What is Angular 3
     duration: 25 Minutes
 - heading: Module 2
   content:
-  - description: What is Spring 2
+  - description: What is Angular 2
     duration: 15 Minutes
-  - description: What is Spring 3
+  - description: What is Angular 3
     duration: 25 Minutes
