@@ -1,12 +1,11 @@
-import React from "react";
-import Header from "@/components/Layout/Header/Header";
+import SiteBreadcrumb from "@/components/Common/Breadcumb";
+import Newsletter from "@/components/Common/Newsletter";
 import Footer from "@/components/Layout/Footer/Footer";
+import Header from "@/components/Layout/Header/Header";
 import OffWrap from "@/components/Layout/Header/OffWrap";
 import SearchModal from "@/components/Layout/Header/SearchModal";
-import Newsletter from "@/components/Common/Newsletter";
-import SiteBreadcrumb from "@/components/Common/Breadcumb";
-import CourseDetailsMain from "./_CourseDetailsMain";
 import { CourseContext } from "@/conext/context";
+import CourseDetailsMain from "./_CourseDetailsMain";
 
 const CourseSingle = ({ course }) => {
   return (
@@ -28,7 +27,7 @@ const CourseSingle = ({ course }) => {
 
       {/* breadcrumb-area-start */}
       <SiteBreadcrumb
-        pageTitle="Learn User Interface and User Experience"
+        pageTitle={course.summary.name}
         pageName="Course Details"
         breadcrumbsImg={`/img/breadcrumbs/2.jpg`}
       />

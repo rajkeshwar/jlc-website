@@ -1,43 +1,40 @@
-
 const InstructorPart = () => {
-
-    return (
-        <div className="content pt-30 pb-30 pl-30 pr-30 white-bg">
-            <h3 className="instructor-title">Instructors</h3>
-            <div className="row rs-team style1 orange-color transparent-bg clearfix">
-                <div className="col-lg-6 col-md-6 col-sm-12 sm-mb-30">
-                    <div className="team-item">
-                        <img src={`/img/team/1.jpg`} alt="" />
-                        <div className="content-part">
-                            <h4 className="name"><a href="#">Jhon Pedrocas</a></h4>
-                            <span className="designation">Professor</span>
-                            <ul className="social-links">
-                                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-6 col-md-6 col-sm-12">
-                    <div className="team-item">
-                        <img src={`/img/team/2.jpg`} alt="" />
-                        <div className="content-part">
-                            <h4 className="name"><a href="#">Jhon Pedrocas</a></h4>
-                            <span className="designation">Professor</span>
-                            <ul className="social-links">
-                                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>  
+  return (
+    <div className="about-part instructor-part mb-30">
+      <div className="sec-title mb-40">
+        <div className="sub-title primary">About Trainer</div>
+        <h5 className="title">
+          Learn Industry Relevant Real-World Programming Skills with Best
+          Trainer &nbsp; - Srinivas Dande
+        </h5>
+        <div className="desc">
+          Srinivas Dande having 18+ Years of Industry Experience in Software
+          Design , development and Training.{" "}
         </div>
-    );
-}
+        <div className="desc">
+          Trained 25,000+ Students since 2005 on various skills - Java Full
+          Stack, MERN Stack MEAN Stack, AWS , DevOPs, Python, Big Data and
+          Hadoop, Sprak and Scala MicroServices, Data Structures and Algorithms
+        </div>
+        <div className="desc">
+          One and Only One Trainer at JLC to train all courses so that You can
+          learn all coursrs in the same pace..{" "}
+        </div>
+      </div>
+      <div className="sign-part">
+        <div className="img-part">
+          <img src="/img/about/ceo.png" alt="CEO Image" />
+        </div>
+        <div className="author-part">
+          <span className="sign mb-10">
+            <img src="/img/about/sign.png" alt="Sign" />
+          </span>
+          <span className="post">Training Architect</span>
+          <span className="post">@ Java Learning Center</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default InstructorPart;

@@ -15,7 +15,8 @@ const FaqPart = () => {
     const openModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="content">
+        <div className="content mb-30">
+            <h4 className="mb-16">Frequently Asked Questions.</h4>
             <Accordion className="accordion-box" preExpanded={'a'}>
                 <AccordionItem className="accordion-item" uuid="a">
                     <AccordionItemHeading>

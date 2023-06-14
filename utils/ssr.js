@@ -9,6 +9,8 @@ import { titleSlugify } from "./common";
 export const DATA_FILES_REGEX = /\.(md|yml)?$/;
 export const COURSE_PATH = join(process.cwd(), "data/courses");
 
+export const API_URL = 'http://localhost:3004';
+
 export const getFilePaths = (sourceDir = "courses") => {
   const dirPath = join(process.cwd(), "data", sourceDir);
 
@@ -24,7 +26,7 @@ export const getFilePaths = (sourceDir = "courses") => {
 
 export const getFileContent = (filePath) => {
   const fileContents = fs.readFileSync(filePath, "utf8");
-  return yaml.parse(fileContents);
+  return yaml.parseAllDocuments(fileContents);
 };
 
 let cachedBlogs = [];
@@ -60,3 +62,39 @@ export const getAllBlogs = async () => {
 
   return blogs;
 };
+
+
+let cachedCourses = [];
+
+export const getAllCourses = async () => {
+  if (cachedCourses.length > 0) return cachedCourses;
+
+  const courses = [];
+
+  for await (let slug of getFilePaths("courses")) {
+    const fullPath = join("data", "courses", `${slug}.yml`);
+    const fileContent = fs.readFileSync(fullPath, "utf8");
+
+    // Use gray-matter to parse the post metadata section
+    const { content, data } = matter(fileContent);
+
+    // Use remark to convert markdown into HTML string
+    const remarkResp = await remark().use(html).process(content);
+    const htmlContent = remarkResp.toString();
+
+    // Combine the data with the id and contentHtml
+    courses.push({
+      routeLink: titleSlugify(data.name),
+      filePath: slug,
+      htmlContent,
+      ...data,
+    });
+  }
+
+  cachedCourses = courses;
+
+  console.log("fetching courses ....");
+
+  return courses;
+};
+

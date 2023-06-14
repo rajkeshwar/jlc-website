@@ -1,5 +1,12 @@
 ---
-name: Git/GitHub Course
+name: Git/Github Course
+trainer: Srinivas Dande
+category: DevOps
+price: 4000
+offerPrice: 2000
+students: 99
+cardImage: /img/courses/3.jpg
+---
 overview:
   description: "<p>Git/GitHub is most popular Tools, ultricies vitae velit. Ut nulla
     tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna,

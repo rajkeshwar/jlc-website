@@ -1,5 +1,12 @@
 ---
-name: JDBC Course
+name: Maven Course
+trainer: Srinivas Dande
+category: Free
+price: 4000
+offerPrice: 2000
+students: 99
+cardImage: /img/courses/4.jpg
+---
 overview:
   name: JDBC Course
   description: "<p>JDBC is most popular framework, ultricies vitae velit. Ut nulla

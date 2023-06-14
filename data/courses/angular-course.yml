@@ -1,5 +1,12 @@
 ---
 name: Angular Course
+trainer: Srinivas Dande
+category: Web Development
+price: 4000
+offerPrice: 2000
+students: 99
+cardImage: /img/courses/1.jpg
+---
 overview:
   description: "<p>Angular is most popular framework, ultricies vitae velit. Ut nulla
     tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna,

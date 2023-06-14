@@ -3,11 +3,13 @@ import Newsletter from "@/components/Common/Newsletter";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import OffWrap from "@/components/Layout/Header/OffWrap";
-import { getFilePaths } from "@/utils/ssr";
+import { API_URL } from "@/utils/ssr";
+import fetch from 'node-fetch';
 import React from "react";
 import CourseMain from "./_CourseMain";
 
-const CourseTwo = ({ courses }) => {
+
+const CourseTwo = ({ courses, categories }) => {
   return (
     <React.Fragment>
       <OffWrap />
@@ -34,7 +36,7 @@ const CourseTwo = ({ courses }) => {
       {/* breadcrumb-area-start */}
 
       {/* Course Main */}
-      <CourseMain courses={courses} />
+      <CourseMain courses={courses} categories={categories}/>
       {/* Course Main */}
 
       <Newsletter
@@ -53,12 +55,12 @@ const CourseTwo = ({ courses }) => {
 export default CourseTwo;
 
 export async function getStaticProps() {
-  
-  const courses = getFilePaths()
-    .map((course, idx) => ({
-      image: `/img/courses/${idx + 1}.jpg`,
-      title: course,
-    }));
 
-  return { props: { courses } };
+  const coursesResp = await fetch(API_URL + '/courses');
+  const courses = await coursesResp.json();
+
+  const categoriesResp = await fetch(API_URL + '/categories');
+  const categories = await categoriesResp.json();
+
+  return { props: { courses, categories } };
 }

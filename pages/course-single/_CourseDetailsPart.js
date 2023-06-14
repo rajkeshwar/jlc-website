@@ -1,6 +1,6 @@
 import React from 'react';
+import CourseDetailsPlain from './CourseDetailsPlain';
 import CourseSidebar from './_CourseSidebar';
-import CourseDetailsTab from './_CourseDetailsTab';
 
 const CourseDetailsPart = () => {
 
@@ -10,7 +10,7 @@ const CourseDetailsPart = () => {
                 <div className="container">
                     <div className="row clearfix">
                         <div className="col-lg-8 md-mb-50">
-                            <CourseDetailsTab />
+                            <CourseDetailsPlain />
                         </div>
                         <div className="video-column col-lg-4">
                             <CourseSidebar />

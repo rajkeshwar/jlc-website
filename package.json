@@ -6,7 +6,8 @@
     "dev": "next dev -p 9090",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -17,6 +18,7 @@
     "lodash-es": "^4.17.21",
     "next": "13.4.4",
     "next-mdx-remote": "^4.4.1",
+    "node-fetch": "^3.3.1",
     "react": "18.2.0",
     "react-accessible-accordion": "^5.0.0",
     "react-countup": "^6.4.2",

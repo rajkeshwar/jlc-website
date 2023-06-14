@@ -1,11 +1,23 @@
-import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import CourseSingleTwo from "@/components/Courses/CourseSingleTwo";
-import { courseTabList } from "@/utils/constants";
 import Loading from "@/components/Loading";
+import { useState } from "react";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
-const CoursePart = ({ courses }) => {
+const CoursePart = ({ courses, categories }) => {
   if (!courses) return <Loading />;
+
+  const [allCourses, setAllCourses] = useState(courses);
+
+  const handleTab = ({ categoryName }) => {
+    setAllCourses(() =>
+      categoryName === "All"
+        ? courses
+        : courses.filter(
+            ({ courseCategory }) => courseCategory === categoryName
+          )
+    );
+  };
+
   return (
     <div
       id="rs-popular-course"
@@ -14,23 +26,23 @@ const CoursePart = ({ courses }) => {
       <div className="container">
         <Tabs>
           <TabList className="gridFilter text-center mb-50 md-mb-30">
-            {courseTabList.map((tabName, index) => (
-              <Tab key={index}>
-                <button>{tabName}</button>
+            {categories.map((category) => (
+              <Tab key={category.catId} onClick={() => handleTab(category)}>
+                <button>
+                  {category.categoryName} ({category.courseCount})
+                </button>
               </Tab>
             ))}
           </TabList>
 
-          {courseTabList.map((_, index) => (
+          {categories.map((_, index) => (
             <TabPanel key={index}>
               <div className="row ">
-                {courses.map((course, idx) => (
-                  <div className="col-lg-4 col-md-6" key={idx}>
+                {allCourses.map((course) => (
+                  <div className="col-lg-4 col-md-6" key={course.courseId}>
                     <CourseSingleTwo
+                      course={course}
                       courseClass="courses-item mb-30"
-                      courseImg={course.image}
-                      courseTitle={course.title}
-                      coursePrice="$40.00"
                     />
                   </div>
                 ))}
