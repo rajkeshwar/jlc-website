@@ -1,0 +1,457 @@
+{
+  "categories": [
+    {
+      "catId": "11",
+      "categoryName": "All",
+      "courseCount": 23,
+      "status": "Active"
+    },
+    {
+      "catId": "12",
+      "categoryName": "Job-Oriented",
+      "courseCount": 1,
+      "status": "Active"
+    },
+    {
+      "catId": "13",
+      "categoryName": "Java",
+      "courseCount": 9,
+      "status": "Active"
+    },
+    {
+      "catId": "14",
+      "categoryName": "Web",
+      "courseCount": 5,
+      "status": "Active"
+    },
+    {
+      "catId": "15",
+      "categoryName": "DevOps",
+      "courseCount": 5,
+      "status": "Active"
+    },
+    {
+      "catId": "16",
+      "categoryName": "AWS",
+      "courseCount": 1,
+      "status": "Active"
+    },
+    {
+      "catId": "17",
+      "categoryName": "DSA",
+      "courseCount": 2,
+      "status": "Active"
+    },
+    {
+      "catId": "18",
+      "categoryName": "Databases",
+      "courseCount": 2,
+      "status": "Inactive"
+    },
+    {
+      "catId": "19",
+      "categoryName": "Tools",
+      "courseCount": 5,
+      "status": "Inactive"
+    },
+    {
+      "catId": "20",
+      "categoryName": "Free",
+      "courseCount": 5,
+      "status": "Inactive"
+    }
+  ],
+  "courses": [
+    {
+      "courseId": 201,
+      "courseName": "Java Full Stack Course",
+      "duration": "500 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "Blended Training",
+      "enrollments": 5000,
+      "price": 30000,
+      "offerPrice": 23000,
+      "courseImage": "java-full-stack-course",
+      "courseCategory": "Job-Oriented",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 301,
+      "courseName": "Core Java Course",
+      "duration": "120 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "Online and Class Room Training",
+      "enrollments": 15000,
+      "price": 10000,
+      "offerPrice": 8000,
+      "courseImage": "core-java",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 302,
+      "courseName": "JDBC Course",
+      "duration": "20 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 5000,
+      "offerPrice": 2500,
+      "courseImage": "jdbc",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 303,
+      "courseName": "Servlets Course",
+      "duration": "30 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 5000,
+      "offerPrice": 2500,
+      "courseImage": "servlets",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 304,
+      "courseName": "JSP Course",
+      "duration": "20 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 5000,
+      "offerPrice": 2500,
+      "courseImage": "jsp",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 305,
+      "courseName": "Hibernate Course",
+      "duration": "40 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 8000,
+      "offerPrice": 5000,
+      "courseImage": "hibernate",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 306,
+      "courseName": "Spring Course",
+      "duration": "60 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 10000,
+      "offerPrice": 6000,
+      "courseImage": "spring",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 307,
+      "courseName": "Spring Boot Course",
+      "duration": "60 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 500,
+      "price": 6000,
+      "offerPrice": 3000,
+      "courseImage": "spring-boot",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 308,
+      "courseName": "MicroServices Course",
+      "duration": "60 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 500,
+      "price": 10000,
+      "offerPrice": 7000,
+      "courseImage": "microservices",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 309,
+      "courseName": "Spring OAuth2 Course",
+      "duration": "20 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 500,
+      "price": 5000,
+      "offerPrice": 2500,
+      "courseImage": "spring-auth2",
+      "courseCategory": "Java",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 401,
+      "courseName": "HTML5 Course",
+      "duration": "15 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 3000,
+      "offerPrice": 1000,
+      "courseImage": "html",
+      "courseCategory": "Web",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 402,
+      "courseName": "CSS3 Course",
+      "duration": "15 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 3000,
+      "offerPrice": 1000,
+      "courseImage": "css",
+      "courseCategory": "Web",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 403,
+      "courseName": "JavaScript Course",
+      "duration": "30 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 15000,
+      "price": 5000,
+      "offerPrice": 2000,
+      "courseImage": "javascript",
+      "courseCategory": "Web",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 404,
+      "courseName": "Angular Course",
+      "duration": "90 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 600,
+      "price": 10000,
+      "offerPrice": 6000,
+      "courseImage": "angular",
+      "courseCategory": "Web",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 405,
+      "courseName": "React Course",
+      "duration": "90 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 600,
+      "price": 10000,
+      "offerPrice": 6000,
+      "courseImage": "react",
+      "courseCategory": "Web",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 501,
+      "courseName": "Git Course",
+      "duration": "20 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 900,
+      "price": 3000,
+      "offerPrice": 1000,
+      "courseImage": "git",
+      "courseCategory": "DevOps",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 502,
+      "courseName": "Jenkins Course",
+      "duration": "15 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 900,
+      "price": 3000,
+      "offerPrice": 1000,
+      "courseImage": "jenkins",
+      "courseCategory": "DevOps",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 503,
+      "courseName": "Docker Course",
+      "duration": "30 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 900,
+      "price": 5000,
+      "offerPrice": 2000,
+      "courseImage": "docker",
+      "courseCategory": "DevOps",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 504,
+      "courseName": "Kubernetes Course",
+      "duration": "40 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 900,
+      "price": 10000,
+      "offerPrice": 6000,
+      "courseImage": "kubernetes",
+      "courseCategory": "DevOps",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 505,
+      "courseName": "Helm Course",
+      "duration": "90 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 900,
+      "price": 3000,
+      "offerPrice": 1000,
+      "courseImage": "helm",
+      "courseCategory": "DevOps",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 601,
+      "courseName": "AWS Solution Architect Associate Course",
+      "duration": "120 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 200,
+      "price": 15000,
+      "offerPrice": 10000,
+      "courseImage": "aws-saa",
+      "courseCategory": "AWS",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 701,
+      "courseName": "Data Structures & Algorithms Course",
+      "duration": "120 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 200,
+      "price": 15000,
+      "offerPrice": 10000,
+      "courseImage": "dsa",
+      "courseCategory": "DSA",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    },
+    {
+      "courseId": 702,
+      "courseName": "LeetCode Problems Course",
+      "duration": "90 Hours",
+      "trainer": "Srinivas Dande",
+      "trainingMode": "On-Demand Video Training",
+      "enrollments": 200,
+      "price": 3500,
+      "offerPrice": 7000,
+      "courseImage": "leetcode",
+      "courseCategory": "DSA",
+      "courseURL": "java-fullstack-course",
+      "status": "Active"
+    }
+  ],
+  "java-fullstack-course": {
+    "summary": {
+      "name": "Java Fullstack Course",
+      "trainer": "Srinivas Dande",
+      "category": "Job-Oriented",
+      "price": 4000,
+      "offerPrice": 2000,
+      "students": 99,
+      "cardImage": "/img/courses/5.jpg"
+    },
+    "overview": {
+      "name": "JDBC Course",
+      "description": "<p>JDBC is most popular framework, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.</p><p>Eleifend euismod pellentesque vel Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.</p>",
+      "reviews": {
+        "totalStudents": "9999",
+        "ratings": {
+          "value": "4.1",
+          "total": "8989"
+        },
+        "count": "999"
+      },
+      "keyHighlights": [
+        "90 Hours of Live, Interactive, Trainer-Let Sessions",
+        "90+ Hours of Hands-On Training ",
+        "Training by Experts with 18+ years of experiance",
+        "Gain Skills to become expert Java Develope",
+        "Quizs and Mini Projects to expertise the course"
+      ],
+      "whoCanTake": [
+        "Students",
+        "Freshers",
+        "Novices",
+        "Developers",
+        "IT Industry Professionals"
+      ]
+    },
+    "curriculum": [
+      {
+        "heading": "Module 1",
+        "content": [
+          {
+            "description": "What is JDBC 1",
+            "duration": "15 Minutes"
+          },
+          {
+            "description": "What is JDBC 2",
+            "duration": "25 Minutes"
+          },
+          {
+            "description": "What is JDBC 3",
+            "duration": "25 Minutes"
+          }
+        ]
+      },
+      {
+        "heading": "Module 2",
+        "content": [
+          {
+            "description": "What is JDBC 2",
+            "duration": "15 Minutes"
+          },
+          {
+            "description": "What is JDBC 3",
+            "duration": "25 Minutes"
+          }
+        ]
+      }
+    ]
+  }
+}

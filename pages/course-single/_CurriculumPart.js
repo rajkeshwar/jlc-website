@@ -19,7 +19,8 @@ const CurriculumPart = ({ curriculum }) => {
     if (!curriculum) return <Loading/>
 
     return (
-        <div className="content">
+        <div className="content mb-30">
+            <h4 className="mb-16">Course Curriculum</h4>
             <Accordion className="accordion-box" preExpanded={'a'}>
                 <AccordionItem className="accordion-item" uuid="a">
                     <AccordionItemHeading>

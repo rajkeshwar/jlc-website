@@ -1,3 +1,8 @@
+
+[hidden] {
+  display: none !important;
+}
+
 .rs-menu ul.nav-menu li.menu-item-has-children > a:before {
   content: "" !important;
 }
@@ -29,4 +34,30 @@ pre.prettyprint table {
 }
 pre.prettyprint table td {
   border: 1px solid #aaa;
+}
+
+.original-price {
+  margin-right: 1rem;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.course-category {
+  font-size: 27px;
+}
+
+.courses-item {
+  margin-bottom: 1rem;
+}
+
+.instructor-part {
+  padding: 2rem;
+  background: #fff;
 }

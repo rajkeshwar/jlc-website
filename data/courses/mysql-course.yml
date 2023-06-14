@@ -1,14 +1,15 @@
 ---
-name: Docker Course
+name: MySql Course
 trainer: Srinivas Dande
-category: DevOps
+category: Database
 price: 4000
 offerPrice: 2000
 students: 99
-cardImage: /img/courses/2.jpg
+cardImage: /img/courses/3.jpg
 ---
 overview:
-  description: "<p> Docker is most popular Tools, ultricies vitae velit. Ut nulla
+  name: JDBC Course
+  description: "<p>JDBC is most popular framework, ultricies vitae velit. Ut nulla
     tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna,
     venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris
     pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis
@@ -22,7 +23,7 @@ overview:
     ratings:
       value: '4.1'
       total: '8989'
-    reviewsCount: '999'
+    count: '999'
   whatYouWillLearn:
   - Phasellus enim magna, varius et commodo ut.
   - Sed consequat justo non mauris pretium at tempor justo.
@@ -35,15 +36,15 @@ overview:
 curriculum:
 - heading: Module 1
   content:
-  - description: What is Angular 1
+  - description: What is JDBC 1
     duration: 15 Minutes
-  - description: What is Angular 2
+  - description: What is JDBC 2
     duration: 25 Minutes
-  - description: What is Angular 3
+  - description: What is JDBC 3
     duration: 25 Minutes
 - heading: Module 2
   content:
-  - description: What is Angular 2
+  - description: What is JDBC 2
     duration: 15 Minutes
-  - description: What is Angular 3
+  - description: What is JDBC 3
     duration: 25 Minutes

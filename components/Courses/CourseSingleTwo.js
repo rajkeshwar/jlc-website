@@ -1,44 +1,52 @@
-import React from 'react';
-import Link from 'next/link';
-import { lowerCase } from 'lodash-es';
+import React, { useCallback } from "react";
+import Link from "next/link";
+import Loading from "../Loading";
+import { random } from "lodash-es";
 
-const CourseSingleTwo = (props) => {
-    const { courseClass, courseImg, courseTitle, catLink, coursePrice, courseCategory, userCount, userRating } = props;
-    return (
-        <div className={courseClass ? courseClass : 'courses-item'}>
-            <div className="img-part">
-                <img
-                    src={courseImg}
-                    alt={courseTitle}
-                />
+const CourseSingleTwo = ({ course }) => {
+  if (!course) return <Loading />;
+
+  const imageId = useCallback(() => random(1,10), []);
+
+  return (
+    <div className="courses-item">
+      <div className="img-part">
+        <img src={`/img/courses/${imageId()}.jpg`} alt={course.courseName} />
+      </div>
+      <div className="content-part">
+        <ul className="meta-part">
+          <li>
+            <div className="flex-row">
+              <div className="flex-1">
+                <span className="original-price">₹ {course.price}</span>
+                <span className="price">₹ {course.offerPrice}</span>
+              </div>
+              <Link className="categorie course-category" href={"course-categories"}>
+                {course.courseCategory}
+              </Link>
             </div>
-            <div className="content-part">
-                <ul className="meta-part">
-                    <li><span className="price">{coursePrice ? coursePrice : '55.00'}</span></li>
-                    <li><Link className="categorie" href={catLink ? catLink : 'course-categories'}>{courseCategory ? courseCategory : 'Web Development'}</Link></li>
-                </ul>
-                <h3 className="title"><Link href="/courses/jdbc">{courseTitle ? courseTitle : 'Become a PHP Master and Make Money Fast'}</Link></h3>
-                <div className="bottom-part">
-                    <div className="info-meta">
-                        <ul>
-                            <li className="user"><i className="fa fa-user"></i> {userCount ? userCount : '245'}</li>
-                            <li className="ratings">
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <span>({userRating ? userRating : '05'})</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="btn-part">
-                        <Link href={`/courses/${lowerCase(courseTitle)}`}>
-                            {props.btnText}<i className="flaticon-right-arrow"></i>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+          </li>
+        </ul>
+        <h3 className="title">
+          <Link href={`/courses/${course.courseURL}`}>{course.courseName}</Link>
+        </h3>
+        <div className="bottom-part">
+          <div className="info-meta">
+            <ul>
+              <li className="user">
+                <i className="fa fa-user"></i> {course.enrollments}
+              </li>
+            </ul>
+          </div>
+          <div className="btn-part">
+            <Link href={`/courses/${course.courseURL}`}>
+              <i className="flaticon-right-arrow"></i>
+            </Link>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default CourseSingleTwo
+export default CourseSingleTwo;

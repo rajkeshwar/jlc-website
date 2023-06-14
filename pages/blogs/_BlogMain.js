@@ -14,8 +14,6 @@ const BlogMain = ({ blogs, categories }) => {
     const handleRouteChange = (url) => {
       const { category } = router.query;
 
-      console.log("url ", url, category);
-
       setBlogsByCategories(() =>
         blogs.filter((blog) => (!category ? true : blog.category === category))
       );
