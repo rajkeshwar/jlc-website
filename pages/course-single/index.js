@@ -7,7 +7,7 @@ import SearchModal from "@/components/Layout/Header/SearchModal";
 import { CourseContext } from "@/conext/context";
 import CourseDetailsMain from "./_CourseDetailsMain";
 
-const CourseSingle = ({ course }) => {
+const CourseSingle = ({ course={} }) => {
   return (
     <CourseContext.Provider value={course}>
       <OffWrap />

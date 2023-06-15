@@ -8,11 +8,14 @@ import {
     AccordionItemHeading,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
+import Loading from '@/components/Loading';
 
 const FaqPart = ({courseFAQs}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const openModal = () => setIsOpen(!isOpen);
+
+    if (!courseFAQs) return <Loading />;
 
     return (
         <div className="content mb-30">
