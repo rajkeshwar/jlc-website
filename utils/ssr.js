@@ -9,7 +9,7 @@ import { titleSlugify } from "./common";
 export const DATA_FILES_REGEX = /\.(md|yml)?$/;
 export const COURSE_PATH = join(process.cwd(), "data/courses");
 
-export const API_URL = 'http://localhost:3004';
+export const API_URL = 'https://jlcindia.com';
 
 export const getFilePaths = (sourceDir = "courses") => {
   const dirPath = join(process.cwd(), "data", sourceDir);

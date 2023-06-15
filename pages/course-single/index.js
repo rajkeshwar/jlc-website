@@ -27,7 +27,7 @@ const CourseSingle = ({ course }) => {
 
       {/* breadcrumb-area-start */}
       <SiteBreadcrumb
-        pageTitle={course.summary.name}
+        pageTitle={course.courseName}
         pageName="Course Details"
         breadcrumbsImg={`/img/breadcrumbs/2.jpg`}
       />
