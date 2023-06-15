@@ -2,56 +2,13 @@ import React from "react";
 import Link from 'next/link';
 import SectionTitle from "@/components/Common/SectionTitle";
 import CategoriesSingleTwo from "@/components/Categories/CategoriesSingleTwo";
+import { random, range } from "lodash-es";
+import Loading from "@/components/Loading";
 
-const categories = [
-  {
-    title: "General Education",
-    icon: "img/categories/icons/1.png",
-    quantity: 3,
-  },
-  {
-    title: "Computer Science",
-    icon: "img/categories/icons/2.png",
-    quantity: 2,
-  },
-  {
-    title: "Civil Engineering",
-    icon: "img/categories/icons/3.png",
-    quantity: 5,
-  },
-  {
-    title: "Artificial Intelligence",
-    icon: "img/categories/icons/4.png",
-    quantity: 6,
-  },
-  {
-    title: "Business Studies",
-    icon: "img/categories/icons/5.png",
-    quantity: 7,
-  },
-  {
-    title: "Web Development",
-    icon: "img/categories/icons/6.png",
-    quantity: 8,
-  },
-  {
-    title: "Life Course",
-    icon: "img/categories/icons/7.png",
-    quantity: 9,
-  },
-  {
-    title: "Lawyer Course",
-    icon: "img/categories/icons/8.png",
-    quantity: 10,
-  },
-  {
-    title: "Recipes",
-    icon: "img/categories/icons/9.png",
-    quantity: 11,
-  },
-];
+const Categories = ({ categories }) => {
+  
+  if (!categories) return <Loading/>
 
-const Categories = () => {
   return (
     <div className="rs-categories gray-bg style1 pt-94 pb-70 md-pt-64 md-pb-40">
       <div className="container">
@@ -73,13 +30,12 @@ const Categories = () => {
         </div>
 
         <div className="row">
-          {categories.map((category, index) => (
-            <div className="col-lg-4 col-md-6 mb-30" key={index}>
+          {categories.map((category) => (
+            <div className="col-lg-4 col-md-6 mb-30" key={category.catId}>
               <CategoriesSingleTwo
                 categoriesClass="categories-item"
-                title={category.title}
-                quantity={category.quantity}
-                iconImg={category.icon}
+                category={category}
+                iconImg={`/img/categories/icons/${random(1, 9)}.png`}
               />
             </div>
           ))}

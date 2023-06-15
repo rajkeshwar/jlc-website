@@ -4,6 +4,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/Common/SectionTitle";
 import CourseSingleTwo from "@/components/Courses/CourseSingleTwo";
 import { courseList } from "@/utils/constants";
+import Loading from "@/components/Loading";
 // Courses Image
 
 const bgStyle = {
@@ -13,7 +14,8 @@ const bgStyle = {
   backgroundPosition: "center center",
 };
 
-const Courses = () => {
+const Courses = ({ courses }) => {
+  if (!courses) return <Loading />;
   return (
     <div
       className="rs-popular-courses style1 pt-94 pb-70 md-pt-64 md-pb-40"
@@ -40,17 +42,9 @@ const Courses = () => {
         </div>
 
         <div className="row">
-          {courseList.map((course, idx) => (
+          {courses.slice(0, 6).map((course, idx) => (
             <div className="col-lg-4 col-md-6 mb-30" key={idx}>
-              <CourseSingleTwo
-                courseClass="courses-item"
-                courseImg={course.icon}
-                courseTitle={course.title}
-                coursePrice="$75"
-                courseCategory="Web Developer"
-                userCount="245"
-                userRating="05"
-              />
+              <CourseSingleTwo courseClass="courses-item" course={course} />
             </div>
           ))}
         </div>
