@@ -8,10 +8,6 @@ import Link from 'next/link';
 const normalLogo = '/img/logo/lite-logo.png';
 const darkLogo = '/img/logo/dark-logo.png';
 
-const productImg1 = '/img/shop/1.jpg';
-const productImg2 = '/img/shop/2.jpg';
-
-
 const Header = (props) => {
 	const { headerClass, parentMenu, secondParentMenu, activeMenu, headerNormalLogo, headerStickyLogo, mobileNormalLogo, mobileStickyLogo, TopBar, TopBarClass, emailAddress, phoneNumber, Location, CanvasLogo, CanvasClass } = props;
 	const [menuOpen, setMenuOpen] = useState(false)
@@ -93,46 +89,6 @@ const Header = (props) => {
 											</li>
 											<li className="user-icon cart-inner no-border mini-cart-active">
 												<Link href="#"><i className="fa fa-shopping-bag"></i></Link>
-												<div className="woocommerce-mini-cart text-left">
-													<div className="cart-bottom-part">
-														<ul className="cart-icon-product-list">
-															<li className="display-flex">
-																<div className="icon-cart">
-																	<Link href="#"><i className="fa fa-times"></i></Link>
-																</div>
-																<div className="product-info">
-																	<Link href="/shop/cart">Law Book</Link><br />
-																	<span className="quantity">1 × $30.00</span>
-																</div>
-																<div className="product-image">
-																	<Link href="/shop/cart"><img src={productImg1} alt="Product Image" /></Link>
-																</div>
-															</li>
-															<li className="display-flex">
-																<div className="icon-cart">
-																	<Link href="#"><i className="fa fa-times"></i></Link>
-																</div>
-																<div className="product-info">
-																	<Link href="/shop/cart">Spirit Level</Link><br />
-																	<span className="quantity">1 × $30.00</span>
-																</div>
-																<div className="product-image">
-																	<Link href="/shop/cart"><img src={productImg2} alt="Product Image" /></Link>
-																</div>
-															</li>
-														</ul>
-
-														<div className="total-price text-center">
-															<span className="subtotal">Subtotal:</span>
-															<span className="current-price">$85.00</span>
-														</div>
-
-														<div className="cart-btn text-center">
-															<Link className="crt-btn btn1" href="/shop/cart">View Cart</Link>
-															<Link className="crt-btn btn2" href="/shop/checkout">Check Out</Link>
-														</div>
-													</div>
-												</div>
 											</li>
 											<li className="user-icon last-icon hidden-lg">
 												<Link href="/shop/my-account"><i className="fa fa-user-o" aria-hidden="true"></i></Link>

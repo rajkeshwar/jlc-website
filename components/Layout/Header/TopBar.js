@@ -36,9 +36,6 @@ const TopHeader = (props) => {
                                 <i className="fa fa-sign-in"></i>
                                 <Link href="/login">Login</Link> &nbsp;&nbsp;<Link href="/register">Create Free Account</Link>
                             </li>
-                            {/* <li className="btn-part">
-                                <Link href="/contact">Apply Now</Link>
-                            </li> */}
                         </ul>
                     </div>
                 </div>
