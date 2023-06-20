@@ -1,23 +1,19 @@
-import React from 'react';
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
-const CategoriesSingleTwo = (props) => {
-    const { categoriesClass, iconImg, catLink, title, courseQuantity } = props;
+const CategoriesSingleTwo = ({ category, iconImg }) => {
+  const { categoryName, courseCount } = category;
+  return (
+    <Link className={"categories-item"} href={"/course-categories"}>
+      <div className="icon-part">
+        <img src={iconImg} alt={categoryName} />
+      </div>
+      <div className="content-part">
+        <h4 className="title">{categoryName}</h4>
+        <span className="courses">{courseCount} Courses</span>
+      </div>
+    </Link>
+  );
+};
 
-    return (
-        <Link className={categoriesClass ? categoriesClass : 'categories-item'} href={catLink ? catLink : '/course-categories'}>
-            <div className="icon-part">
-                <img
-                    src={iconImg}
-                    alt={title}
-                />
-            </div>
-            <div className="content-part">
-                <h4 className="title">{title ? title : 'General Education'}</h4>
-                <span className="courses">{courseQuantity ? courseQuantity : '05'} Courses</span>
-            </div>
-        </Link>
-    )
-}
-
-export default CategoriesSingleTwo
+export default CategoriesSingleTwo;

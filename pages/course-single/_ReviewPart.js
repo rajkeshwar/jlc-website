@@ -1,135 +1,26 @@
-const ReviewPart = () => {
+import Loading from "@/components/Loading";
+
+const ReviewPart = ({ courseReviews }) => {
+  if (!courseReviews) return <Loading />;
   return (
     <>
       <h4 className="mb-16">Students Reviews</h4>
-      <div className="content pt-30 pb-30 white-bg">
-        <div className="cource-review-box mb-30">
-          <h4>Stephane Smith</h4>
-          <div className="rating">
-            <span className="total-rating">4.5</span>{" "}
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span> 256 Reviews
+      <div className="content pt-30 pb-30">
+        {courseReviews.map((review) => (
+          <div
+            className="cource-review-box white-bg mb-30 py-20"
+            key={review.reviewId}
+          >
+            <div className="flex-row items-center">
+              <h4 className="review-student">{review.studentName}</h4>
+              <span className="review-company">
+                - Java Developer at{" "}
+                <span className="faq-ans ml-5">{review.company}</span>
+              </span>
+            </div>
+            <div className="text">{review.reviewText}</div>
           </div>
-          <div className="text">
-            Phasellus enim magna, varius et commodo ut, ultricies vitae velit.
-            Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel
-            justo. In libero urna, venenatis sit amet ornare non, suscipit nec
-            risus.
-          </div>
-          <div className="helpful">Was this review helpful?</div>
-          <ul className="like-option">
-            <li>
-              <i className="fa fa-thumbs-o-up"></i>
-            </li>
-            <li>
-              <i className="fa fa-thumbs-o-down"></i>
-            </li>
-            <li>
-              <a className="report" href="#">
-                Report
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="cource-review-box mb-30">
-          <h4>Anna Sthesia</h4>
-          <div className="rating">
-            <span className="total-rating">4.5</span>{" "}
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span> 256 Reviews
-          </div>
-          <div className="text">
-            Phasellus enim magna, varius et commodo ut, ultricies vitae velit.
-            Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel
-            justo. In libero urna, venenatis sit amet ornare non, suscipit nec
-            risus.
-          </div>
-          <div className="helpful">Was this review helpful?</div>
-          <ul className="like-option">
-            <li>
-              <i className="fa fa-thumbs-o-up"></i>
-            </li>
-            <li>
-              <i className="fa fa-thumbs-o-down"></i>
-            </li>
-            <li>
-              <a className="report" href="#">
-                Report
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="cource-review-box mb-30">
-          <h4>Petey Cruiser</h4>
-          <div className="rating">
-            <span className="total-rating">4.5</span>{" "}
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span> 256 Reviews
-          </div>
-          <div className="text">
-            Phasellus enim magna, varius et commodo ut, ultricies vitae velit.
-            Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel
-            justo. In libero urna, venenatis sit amet ornare non, suscipit nec
-            risus.
-          </div>
-          <div className="helpful">Was this review helpful?</div>
-          <ul className="like-option">
-            <li>
-              <i className="fa fa-thumbs-o-up"></i>
-            </li>
-            <li>
-              <i className="fa fa-thumbs-o-down"></i>
-            </li>
-            <li>
-              <a className="report" href="#">
-                Report
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="cource-review-box">
-          <h4>Rick O'Shea</h4>
-          <div className="rating">
-            <span className="total-rating">4.5</span>{" "}
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span> 256 Reviews
-          </div>
-          <div className="text">
-            Phasellus enim magna, varius et commodo ut, ultricies vitae velit.
-            Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel
-            justo. In libero urna, venenatis sit amet ornare non, suscipit nec
-            risus.
-          </div>
-          <div className="helpful">Was this review helpful?</div>
-          <ul className="like-option">
-            <li>
-              <i className="fa fa-thumbs-o-up"></i>
-            </li>
-            <li>
-              <i className="fa fa-thumbs-o-down"></i>
-            </li>
-            <li>
-              <a className="report" href="#">
-                Report
-              </a>
-            </li>
-          </ul>
-          <a href="#" className="more">
-            View More
-          </a>
-        </div>
+        ))}
       </div>
     </>
   );

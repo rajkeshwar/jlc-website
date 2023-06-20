@@ -2,38 +2,39 @@ import Loading from "@/components/Loading";
 import { get } from "lodash-es";
 import React from "react";
 
-const OverviewPart = ({ overview }) => {
-  if (!overview) return <Loading/>
+const OverviewPart = ({ courseOverview, courseName }) => {
+  if (!courseOverview) return <Loading/>
   return (
     <div className="content white-bg pt-30 mb-30">
       <div className="course-overview">
         <div className="inner-box">
-          <h4>{get(overview, 'name', '-')}</h4>
-          <div dangerouslySetInnerHTML={{ __html: get(overview, 'description','-') }}></div>
+          <h4>{courseName || '-'}</h4>
+          <div dangerouslySetInnerHTML={{ __html: get(courseOverview, 'description1','-') }}></div>
+          <div dangerouslySetInnerHTML={{ __html: get(courseOverview, 'description2','-') }}></div>
           <ul className="student-list" hidden>
-            <li>{get(overview, 'reveiws.totalStudents', '-')} Total Students</li>
+            <li>{get(courseOverview, 'reveiws.totalStudents', '-')} Total Students</li>
             <li>
               <span className="theme_color">
-                {get(overview, 'reveiws.ratings.value', '-')}
+                {get(courseOverview, 'reveiws.ratings.value', '-')}
               </span>
               <span className="fa fa-star"></span>
               <span className="fa fa-star"></span>
               <span className="fa fa-star"></span>
               <span className="fa fa-star"></span>
               <span className="fa fa-star"></span> (
-              {get(overview, 'reveiws.ratings.total', '-')} Rating
+              {get(courseOverview, 'reveiws.ratings.total', '-')} Rating
             </li>
-            <li>{get(overview, 'reveiws.count', '-')} Reviews</li>
+            <li>{get(courseOverview, 'reveiws.count', '-')} Reviews</li>
           </ul>
-          <h3>What you’ll learn?</h3>
+          <h3>Key Highlights</h3>
           <ul className="review-list">
-            {get(overview, 'keyHighlights', []).map((learn, index) => (
+            {get(courseOverview, 'keyHighlights', []).map((learn, index) => (
               <li key={index}>{learn}</li>
             ))}
           </ul>
-          <h3>Requirements</h3>
+          <h3>Who can take this course</h3>
           <ul className="review-list">
-            {get(overview, 'whoCanTake', []).map((learn, index) => (
+            {get(courseOverview, 'whoCanTake', []).map((learn, index) => (
               <li key={index}>{learn}</li>
             ))}
           </ul>

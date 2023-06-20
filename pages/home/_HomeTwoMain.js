@@ -9,7 +9,7 @@ import CTA from './_CtaSection';
 import Faq from './_FaqSection';
 import Testimonial from './_TestimonialSection';
 
-const HomeTwoMain = () => {
+const HomeTwoMain = ({ categories, courses }) => {
 	return (
 		<React.Fragment>
 			{/* Banner-area-start */}
@@ -21,11 +21,11 @@ const HomeTwoMain = () => {
 			{/* about-area-end */}
 
 			{/* Categories-area-start */}
-			<Categories />
+			<Categories categories={categories}/>
 			{/* Categories-area-end */}
 
 			{/* Course-area-start */}
-			<Courses />
+			<Courses courses={courses} />
 			{/* Course-area-end */}
 
 			{/* call us section start */}

@@ -16,11 +16,11 @@ const CourseDetailsPlain = () => {
 
   return (
     <div className="intro-info-tabs">
-      <OverviewPart overview={course.overview} />
-      <CurriculumPart curriculum={course.curriculum} />
+      <OverviewPart courseOverview={course.courseOverview} courseName={course.courseName}/>
+      <CurriculumPart courseModules={course.courseModules} />
       <InstructorPart />
-      <FaqPart />
-      <ReviewPart />
+      <FaqPart courseFAQs={course.courseFAQs}/>
+      <ReviewPart courseReviews={course.courseReviews}/>
     </div>
   );
 };

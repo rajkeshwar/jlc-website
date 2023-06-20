@@ -7,7 +7,7 @@ import SearchModal from "@/components/Layout/Header/SearchModal";
 import { CourseContext } from "@/conext/context";
 import CourseDetailsMain from "./_CourseDetailsMain";
 
-const CourseSingle = ({ course }) => {
+const CourseSingle = ({ course={} }) => {
   return (
     <CourseContext.Provider value={course}>
       <OffWrap />
@@ -27,7 +27,7 @@ const CourseSingle = ({ course }) => {
 
       {/* breadcrumb-area-start */}
       <SiteBreadcrumb
-        pageTitle={course.summary.name}
+        pageTitle={course.courseName}
         pageName="Course Details"
         breadcrumbsImg={`/img/breadcrumbs/2.jpg`}
       />

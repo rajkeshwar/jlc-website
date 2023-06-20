@@ -5,8 +5,10 @@ import Header from '@/components/Layout/Header/Header';
 import OffWrap from '@/components/Layout/Header/OffWrap';
 import SearchModal from '@/components/Layout/Header/SearchModal';
 import HomeTwoMain from './_HomeTwoMain';
+import fetch from 'node-fetch';
+import { API_URL } from '@/utils/ssr';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <React.Fragment>
             <Helmet>
@@ -26,7 +28,7 @@ const Home = () => {
                 emailAddress="hello@javalearningcenter.com"
                 phoneNumber="+91-8105815599"
             />
-            <HomeTwoMain />
+            <HomeTwoMain {...props}/>
             <FooterStyleTwo />
             <SearchModal />
         </React.Fragment>
@@ -36,3 +38,15 @@ const Home = () => {
 
 export default Home;
 
+
+export async function getStaticProps() {
+
+    const coursesResp = await fetch(API_URL + '/myapi/mycourses');
+    const courses = await coursesResp.json();
+  
+    const categoriesResp = await fetch(API_URL + '/myapi/mycategories');
+    const categories = await categoriesResp.json();
+  
+    return { props: { courses, categories } };
+  }
+  

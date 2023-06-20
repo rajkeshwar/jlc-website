@@ -56,10 +56,10 @@ export default CourseTwo;
 
 export async function getStaticProps() {
 
-  const coursesResp = await fetch(API_URL + '/courses');
+  const coursesResp = await fetch(API_URL + '/myapi/mycourses');
   const courses = await coursesResp.json();
 
-  const categoriesResp = await fetch(API_URL + '/categories');
+  const categoriesResp = await fetch(API_URL + '/myapi/mycategories');
   const categories = await categoriesResp.json();
 
   return { props: { courses, categories } };

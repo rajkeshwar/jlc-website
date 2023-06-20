@@ -46,6 +46,10 @@ pre.prettyprint table td {
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -60,4 +64,24 @@ pre.prettyprint table td {
 .instructor-part {
   padding: 2rem;
   background: #fff;
+}
+
+.faq-answer {
+  padding: 2rem;
+  font-size: 18px;
+}
+
+.faq-ans {
+  color: #ff5421!important;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.review-student {
+  margin-bottom: 0;
+  margin-right: 3rem;
+}
+
+.cource-review-box {
+  padding: 40px !important;
 }
