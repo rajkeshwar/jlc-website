@@ -4,7 +4,7 @@ import FooterStyleTwo from '@/components/Layout/Footer/FooterStyleTwo';
 import Header from '@/components/Layout/Header/Header';
 import OffWrap from '@/components/Layout/Header/OffWrap';
 import SearchModal from '@/components/Layout/Header/SearchModal';
-import HomeTwoMain from './_HomeTwoMain';
+import HomeTwoMain from '@/pageblocks/home/_HomeTwoMain';
 import fetch from 'node-fetch';
 import { API_URL } from '@/utils/ssr';
 

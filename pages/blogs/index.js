@@ -7,7 +7,7 @@ import Header from "@/components/Layout/Header/Header";
 import OffWrap from "@/components/Layout/Header/OffWrap";
 import { BlogsContext } from "@/conext/context";
 import { getAllBlogs } from "@/utils/ssr";
-import BlogMain from "./_BlogMain";
+import BlogMain from "@/pageblocks/blogs/_BlogMain";
 
 // Image
 const Logo = "/img/logo/dark-logo.png";

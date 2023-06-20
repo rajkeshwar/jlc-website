@@ -1,11 +1,11 @@
+import React from "react";
 import SiteBreadcrumb from "@/components/Common/Breadcumb";
 import Newsletter from "@/components/Common/Newsletter";
 import ScrollToTop from "@/components/Common/ScrollTop";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import OffWrap from "@/components/Layout/Header/OffWrap";
-import React from "react";
-import SinglePostSidebar from "./_SinglePostSidebar";
+import SinglePostSidebar from "@/pageblocks/blogs/_SinglePostSidebar";
 
 // Image
 import Logo from "@/assets/img/logo/dark-logo.png";

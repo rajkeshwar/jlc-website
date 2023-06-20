@@ -1,15 +1,19 @@
-import React from 'react';
-import Header from '@/components/Layout/Header';
-import Footer from '@/components/Layout/Footer/Footer';
 import Newsletter from '@/components/Common/Newsletter';
 import ScrollToTop from '@/components/Common/ScrollTop';
+import Footer from '@/components/Layout/Footer/Footer';
+import Header from '@/components/Layout/Header';
 import OffWrap from '@/components/Layout/Header/OffWrap';
-import ContactMain from '@/pageblocks/contact/_ContactMain';
+import React from 'react';
+import ContactMain from './_ContactMain';
 
 const Contact = () => {
     return (
         <React.Fragment>
             <OffWrap />
+            {/* Header */}
+            {/* <Helmet>
+                <link rel="icon" href={`/img/fav-orange.png`} />
+            </Helmet> */}
             <Header
                 parentMenu='contact'
                 headerNormalLogo={`/img/logo/dark-logo.png`}

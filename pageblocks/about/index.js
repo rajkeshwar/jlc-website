@@ -5,7 +5,7 @@ import OffWrap from '@/components/Layout/Header/OffWrap';
 import SearchModal from '@/components/Layout/Header/SearchModal';
 import Newsletter from '@/components/Common/Newsletter';
 import SiteBreadcrumb from '@/components/Common/Breadcumb';
-import AboutMain from '@/pageblocks/about/_AboutMain';
+import AboutMain from './_AboutMain';
 
 const About = () => {
 

@@ -3,10 +3,10 @@ import Newsletter from "@/components/Common/Newsletter";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import OffWrap from "@/components/Layout/Header/OffWrap";
-import CourseMain from "@/pageblocks/courses/_CourseMain";
 import { API_URL } from "@/utils/ssr";
 import fetch from 'node-fetch';
 import React from "react";
+import CourseMain from "./_CourseMain";
 
 
 const CourseTwo = ({ courses, categories }) => {
